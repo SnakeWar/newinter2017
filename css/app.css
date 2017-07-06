@@ -1,0 +1,64 @@
+h1, h2, h3, h4, h5{
+	font-family: 'Acme', sans-serif !important;
+	color: #283a28;
+	margin: 20px auto;
+}
+body{
+	font-family: 'Questrial', sans-serif !important;
+}
+a:hover, a:link, a:visited{
+	color: red;
+}
+.grid-container{
+	max-width: 156rem !important;
+}
+.card-divider{
+	background: #283a28;
+	color: #fff;
+	text-shadow: 0px 5px 5px #000
+}
+.card img{
+	max-width: 200px;
+	margin: 0 auto;
+}
+.card{
+	max-width: 300px;
+	margin: 10px 0;
+}
+
+.callout, .top-bar, .top-bar ul, .top-bar-left, .top-bar-right, .menu li{
+	background: #283a28;
+}
+.callout{
+	text-shadow: 0px 5px 5px #000;
+}
+/*h2{
+	font-family: 'Rationale', sans-serif;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+h4{
+	font-family: 'Rationale', sans-serif;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+h5{
+	font-family: 'Rationale', sans-serif;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+
+}*/
+
+ /*_________*/
+
+.logo-site{
+	color: #fff !important;
+	text-shadow: 0px 5px 5px #000;
+}
+.caixa{
+	border-top: 1px solid #283a28;
+	border-right: 1px solid #283a28;
+	border-left: 1px solid #283a28;
+	margin: 30px 15px;
+	box-shadow: 0px 5px 5px #000;
+}
+.login{
+	padding: 10px 5px;
+}
