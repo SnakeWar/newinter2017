@@ -166,7 +166,7 @@ $time3 = 8;
 </div>
 </div>
 </div>
-<div class="grid-container caixa">
+<div class="grid-container caixa pagina-inicial">
  <div class="grid-x grid-padding-x">
   <div class="medium-6 large-4 cell">
    <div class="row column text-center">

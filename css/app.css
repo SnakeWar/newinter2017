@@ -53,8 +53,14 @@ a:hover, a:link, a:visited{
 .ali-direita{
 	text-align: right;
 }
-.jogos{
-	font-size: 1rem;
+@media screen and (max-width: 480px){
+
+	.jogos{
+		font-size: 13px;
+	}
+	.grid-container{
+		padding: 0 0;
+	}
 }
 .callout, .top-bar, .top-bar ul, .top-bar-left, .top-bar-right, .menu li{
 	background: #283a28;
