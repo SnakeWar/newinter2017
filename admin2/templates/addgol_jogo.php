@@ -16,7 +16,7 @@ $timeb = $jogo['timev_id'];
 ?>
 <div class="grid-container">
 <div class="grid-x grid-padding-x">
-  <div class="medium-6 large-4 cell">
+  <div class="medium-6 large-3 cell caixa">
         <div class="row column text-center">
         <h2>Adicionar Gol(s)</h2>
         </div>
@@ -39,11 +39,26 @@ $timeb = $jogo['timev_id'];
             <button type="submit" class="success button">Adicionar Gol</button>
         </form>
         <button type="submit" class="warning button" onclick="voltar()">Voltar</button>
-
-                        <!-- --------Artilheiro------------- -->
-
+</div>
+                   
+    <div class="medium-6 large-5 cell caixa">
         <div class="row column text-center">
-        <h1>Artilharia</h1>
+        <h2>Dados do Jogo</h2>
+        </div>
+        <table class="table table-striped">
+            <tr>
+                <th>Data</th>
+                <th>Time (Casa)</th>
+                <th>Placar</th>
+                <th>Time (Visitante)</th>
+            </tr>
+            <tr><td><?php echo $jogo['data'] ?></td><td><?php echo $jogo['time_casa'] ?></td><td><?php echo $jogo['placar_casa']?> X <?php echo $jogo['placar_visitante']?></td><td><?php echo $jogo['time_visitante']?></td></tr>
+        </table>
+    </div>
+         <!-- --------Artilheiro------------- -->
+<div class="medium-6 large-3 cell caixa">
+        <div class="row column text-center">
+        <h2>Artilharia</h2>
         </div>
         <table>
   <thead>
@@ -67,20 +82,6 @@ $timeb = $jogo['timev_id'];
 </table>
     </div>
           <!-- --------------------- -->
-    <div class="medium-6 large-8 cell">
-        <div class="row column text-center">
-        <h1>Dados do Jogo</h1>
-        </div>
-        <table class="table table-striped">
-            <tr>
-                <th>Data</th>
-                <th>Time (Casa)</th>
-                <th>Placar</th>
-                <th>Time (Visitante)</th>
-            </tr>
-            <tr><td><?php echo $jogo['data'] ?></td><td><?php echo $jogo['time_casa'] ?></td><td><?php echo $jogo['placar_casa']?> X <?php echo $jogo['placar_visitante']?></td><td><?php echo $jogo['time_visitante']?></td></tr>
-        </table>
-    </div>
     
     </div>
     <script type="text/javascript">

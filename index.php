@@ -6,16 +6,16 @@
 * Time: 8:08
 */
 include('config/banco.php');
-$time1 = 4;
-$time2 = 4;
-$time3 = 4;
+$time1 = 6;
+$time2 = 7;
+$time3 = 8;
 ?>
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Campeonato Altinão 2017</title>
+    <title>Altinão 2017</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link href="https://fonts.googleapis.com/css?family=Acme|Questrial" rel="stylesheet">
@@ -41,19 +41,19 @@ $time3 = 4;
 
     <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
       <ul class="orbit-container">
-        <button class="orbit-previous" aria-label="previous"><i class="step fi-arrow-left size-36"></i></button>
-        <button class="orbit-next" aria-label="next"><i class="step fi-arrow-right size-36"></i></button>
-        <li class="orbit-slide is-active">
-          <img src="img/campo1.jpg">
+        <button class="orbit-previous" aria-label="previous"><i class="step fi-arrow-left seta"></i></button>
+        <button class="orbit-next" aria-label="next"><i class="step fi-arrow-right seta"></i></button>
+        <li class="orbit-slide is-active" style="background-image: url('img/campo1.jpg')">
+          <!-- <img src="img/campo1.jpg"> -->
         </li>
-        <li class="orbit-slide">
-          <img src="img/campo1.jpg">
+        <li class="orbit-slide" style="background-image: url('img/campo1.jpg')">
+          <!-- <img src="img/campo1.jpg"> -->
         </li>
-        <li class="orbit-slide">
-          <img src="img/campo1.jpg">
+        <li class="orbit-slide" style="background-image: url('img/campo1.jpg')">
+          <!-- <img src="img/campo1.jpg"> -->
         </li>
-        <li class="orbit-slide">
-          <img src="img/campo1.jpg">
+        <li class="orbit-slide" style="background-image: url('img/campo1.jpg')">
+          <!-- <img src="img/campo1.jpg"> -->
         </li>
       </ul>
     </div>
@@ -73,7 +73,17 @@ $time3 = 4;
         echo $time['nome'];
     ?>
   </div>
-  <img src="img/barsemlona.png">
+  <?php
+              if($time['nome'] == 'Pé Com Chulé'){
+                echo '<img src="img/pecomchule.png">';
+              }
+              if($time['nome'] == 'Bar 100 Lona'){
+                echo '<img src="img/barsemlona.png">';
+              }
+              if($time['nome'] == 'Laranjada F.C'){
+                echo '<img src="img/barsemlona.png">';
+              }
+            ?>
   <div class="card-section">
     
     <?php
@@ -97,7 +107,17 @@ $time3 = 4;
         echo $time['nome'];
     ?>
   </div>
-  <img src="img/barsemlona.png">
+  <?php
+              if($time['nome'] == 'Pé Com Chulé'){
+                echo '<img src="img/pecomchule.png">';
+              }
+              if($time['nome'] == 'Bar 100 Lona'){
+                echo '<img src="img/barsemlona.png">';
+              }
+              if($time['nome'] == 'Laranjada F.C'){
+                echo '<img src="img/barsemlona.png">';
+              }
+            ?>
   <div class="card-section">
     <?php
             $result = mysqli_query($link, "SELECT `nome`
@@ -120,7 +140,17 @@ $time3 = 4;
         echo $time['nome'];
     ?>
   </div>
-  <img src="img/barsemlona.png">
+  <?php
+              if($time['nome'] == 'Pé Com Chulé'){
+                echo '<img src="img/pecomchule.png">';
+              }
+              if($time['nome'] == 'Bar 100 Lona'){
+                echo '<img src="img/barsemlona.png">';
+              }
+              if($time['nome'] == 'Laranjada F.C'){
+                echo '<img src="img/barsemlona.png">';
+              }
+            ?>
   <div class="card-section">
     <?php
             $result = mysqli_query($link, "SELECT `nome`
@@ -155,7 +185,7 @@ $time3 = 4;
         $result = mysqli_query($link, "SELECT `nome`, `pontos` FROM `time` ORDER BY `pontos` DESC");
         while ($classificacao = mysqli_fetch_array($result))
         {
-        echo '<tr><td>' . $classificacao['nome'] . '</td><td>' . $classificacao['pontos'] .
+        echo '<tr><td>' . $classificacao['nome'] . '</td><td style="text-align: center">' . $classificacao['pontos'] .
         '</tr>';
         }
     ?>
@@ -180,7 +210,7 @@ $time3 = 4;
         WHERE (`info_gol`.`quantidade` > 0) GROUP BY `jogador_id` ORDER BY SUM(`info_gol`.`quantidade`) DESC");
         while($artilheiro = mysqli_fetch_array($result)){
         echo   '<tr>
-            <td>' . $artilheiro['nome'] . '</td><td>' . $artilheiro['gols'] . '</td></tr>';
+            <td>' . $artilheiro['nome'] . '</td><td style="text-align: center">' . $artilheiro['gols'] . '</td></tr>';
             }
     ?>
   </tbody>
@@ -191,11 +221,11 @@ $time3 = 4;
       <h2>Jogos</h2>
       <hr>
     </div>
-     <table>
+     <table class="jogos">
   <thead>
     <tr>
       <th>Data</th>
-      <th>Time de Casa</th>
+      <th class="ali-direita">Time de Casa</th>
       <th style="text-align: center">Placar</th>
       <th>Time Fora de Casa</th>
     </tr>
@@ -208,7 +238,7 @@ $time3 = 4;
         while ($jogos = mysqli_fetch_array($result))
         {
             $jogo_id = $jogos['id_jogo'];
-        echo '<tr class="info-jogos"><td>' . $jogos['data'] . '</td><td>' . $jogos['time_casa'] . '</td><td style="text-align: center">' . $jogos['placar_casa'] . ' X ' . $jogos['placar_visitante'] . '</td><td>' . $jogos['time_visitante'] . '</td></tr>';
+        echo '<tr class="info-jogos"><td>' . $jogos['data'] . '</td><td class="ali-direita">' . $jogos['time_casa'] . '</td><td style="text-align: center">' . $jogos['placar_casa'] . ' X ' . $jogos['placar_visitante'] . '</td><td>' . $jogos['time_visitante'] . '</td></tr>';
 
         $result_gols = mysqli_query($link, "SELECT jo.nome AS jogador, gol.quantidade AS gols FROM info_gol AS gol LEFT JOIN jogador AS jo ON jo.id = gol.jogador_id WHERE gol.jogo_id = '$jogo_id'");
 
@@ -273,12 +303,11 @@ $time3 = 4;
 </div>
 </div>
 
-<div class="grid-container">
+
   <div class="callout large">
   <h5 style="color: #fff">Altinão 2017</h5>
   <p style="color: #fff">Canguaretama/RN</p>
   <p style="color: #fff">Developed by<a href="https://www.facebook.com/mayrconmarlon.warchiefsnake"><b> SnakeWar</b></a></p>
-</div>
 </div>
 
    <script src="js/vendor/jquery.js"></script>

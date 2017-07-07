@@ -20,9 +20,9 @@ else{
 ?>
 <div class="grid-container">
 <div class="grid-x grid-padding-x">
-  <div class="medium-6 large-4 cell">
+  <div class="medium-6 large-4 cell caixa">
         <div class="row column text-center">
-    <h1>Cadastrar Time</h1>
+    <h2>Cadastrar Time</h2>
     </div>
     <form>
       <div class="form-group">
@@ -34,9 +34,9 @@ else{
   </div>
   <!-- FIM Cadastrar Time -->
   <!-- Editar Time -->
-  <div class="medium-6 large-8 cell">
+  <div class="medium-6 large-7 cell caixa">
     <div class="row column text-center">
-    <h1>Editar Times</h1>
+    <h2>Editar Times</h2>
     </div>
     <table class="table table-striped">
       <tr>
@@ -48,7 +48,7 @@ else{
       $result = "SELECT nome, pontos, id FROM time ORDER BY pontos DESC";
       $times = mysqli_query($link, $result);
       foreach($times as $time){
-        echo '<tr><td>' . $time['nome'] . '</td><td>' . $time['pontos'] . '</td><td><button type="submit" class=" warning button" onclick="editar('. $time['id'] .')">Editar</button> <button type="submit" class="alert button" onclick="confirmacao('. $time['id'] .')">Excluir</button></td></tr>';
+        echo '<tr><td>' . $time['nome'] . '</td><td style="text-align: center;">' . $time['pontos'] . '</td><td><button type="submit" class=" warning button" onclick="editar('. $time['id'] .')">Editar</button> <button type="submit" class="alert button" onclick="confirmacao('. $time['id'] .')">Excluir</button></td></tr>';
       }
       ?>
     </table>

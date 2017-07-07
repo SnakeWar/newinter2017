@@ -1,7 +1,7 @@
 <?php
 /*$link = mysqli_connect("mysql.hostinger.com.br", "u746126155_camp", "Lxp5BLRuWYca", "u746126155_db");*/
-/*$link = mysqli_connect("localhost", "snakewar_camp", "pHxsHwQHND", "snakewar_campeonato_db");*/
-$link = mysqli_connect("localhost", "root", "123456", "campeonato_db");
+$link = mysqli_connect("localhost", "snakewar_camp", "pHxsHwQHND", "snakewar_campeonato_db");
+/*$link = mysqli_connect("localhost", "root", "123456", "campeonato_db");*/
 
 if (!$link) {
     echo "Error: Unable to connect to MySQL." . PHP_EOL;

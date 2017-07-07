@@ -14,7 +14,17 @@ a:hover, a:link, a:visited{
 	color: #fff;
 	text-shadow: 0px 5px 5px #000
 }
-
+.card img{
+	max-width: 200px;
+	margin: 0 auto;
+}
+.card{
+	max-width: 300px;
+	margin: 10px auto;
+}
+.ali-direita{
+	text-align: right;
+}
 .callout, .top-bar, .top-bar ul, .top-bar-left, .top-bar-right, .menu li{
 	background: #283a28;
 }
@@ -40,4 +50,12 @@ h5{
 .logo-site{
 	color: #fff !important;
 	text-shadow: 0px 5px 5px #000;
+}
+.caixa{
+	border-top: 1px solid #283a28;
+	border-right: 1px solid #283a28;
+	border-left: 1px solid #283a28;
+	margin: 30px 15px;
+	box-shadow: 0px 5px 5px #000;
+	padding: 30px 30px;
 }

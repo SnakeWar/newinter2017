@@ -49,19 +49,29 @@ $time = mysqli_fetch_array($times);
 	                       <!-- Editar Jogo -->
 <div class="grid-container">
 <div class="grid-x grid-padding-x">
-<div class="medium-6 large-4 cell">
+<div class="medium-6 large-4 cell caixa">
 <div class="row column text-center">
 <h1>Escalação</h1>
 </div>
 <div class="card" style="width: 300px;">
   <div class="card-divider">
                <?php
-                    $result = mysqli_query($link, "SELECT `nome` FROM `time` WHERE `id` = '$id_time'");
+                    $result = mysqli_query($link, "SELECT `nome`, `pontos` FROM `time` WHERE `id` = '$id_time'");
                     $time = mysqli_fetch_array($result);
                     echo $time['nome'];
                 ?>
             </div>
-  <img src="../../img/barsemlona.png">
+            <?php
+              if($time['nome'] == 'Pé Com Chulé'){
+                echo '<img src="../../img/pecomchule.png">';
+              }
+              if($time['nome'] == 'Bar 100 Lona'){
+                echo '<img src="../../img/barsemlona.png">';
+              }
+              if($time['nome'] == 'Laranjada F.C'){
+                echo '<img src="../../img/barsemlona.png">';
+              }
+            ?>
   <div class="card-section">
             <?php
             $result = mysqli_query($link, "SELECT `nome`, `id` AS id_jogador FROM `jogador` WHERE (`jogador`.`id_time` = '$id_time') ORDER BY `jogador`.`nome` ASC");
@@ -74,7 +84,7 @@ $time = mysqli_fetch_array($times);
         </div>
         </div>
 </div>
-  <div class="medium-6 large-4 cell">
+  <div class="medium-6 large-4 cell caixa">
         <div class="row column text-center">
 <h1>Editar Time</h1>
 </div>

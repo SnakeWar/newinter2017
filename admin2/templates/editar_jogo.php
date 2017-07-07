@@ -48,7 +48,7 @@ $jogo = mysqli_fetch_array($jogos);
 <!-- Editar Jogo -->
 <div class="grid-container">
 <div class="grid-x grid-padding-x">
-  <div class="medium-6 large-4 cell">
+  <div class="medium-6 large-4 cell caixa">
         <div class="row column text-center">
     <h1>Editar Jogo</h1>
     </div>
@@ -92,7 +92,7 @@ $jogo = mysqli_fetch_array($jogos);
       <a class="warning button" onclick="voltar()">Voltar</a>
     </form>
   </div>
-  <div class="medium-6 large-8 cell">
+  <div class="medium-6 large-7 cell caixa">
     <div class="row column text-center">
     <h1>Dados anteriores do Jogo</h1>
     </div>
