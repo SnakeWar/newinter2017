@@ -42,7 +42,7 @@ mysqli_query($link, $add) or die(mysqli_error($link));
 <!-- Começo Cadastro -->
 <div class="grid-container">
 <div class="grid-x grid-padding-x">
-  <div class="medium-6 large-3 cell caixa">
+  <div class="small-12 medium-12 large-3 cell caixa">
         <div class="row column text-center">
             <h3>Cadastrar Jogo</h3>
         </div>
@@ -84,11 +84,11 @@ mysqli_query($link, $add) or die(mysqli_error($link));
     </div>
     <!-- Fim Cadastro -->
     <!-- Começo Lista de Jogos -->
-    <div class="medium-6 large-8 cell caixa">
+    <div class="small-12 medium-12 large-8 cell caixa jogos">
     <div class="row column text-center">
         <h1>Jogos</h1>
         </div>
-        <table class="table table-striped">
+        <table class="">
             <tr>
                 <th>Data</th>
                 <th>Time (Casa)</th>

@@ -66,12 +66,18 @@ $jogo = mysqli_fetch_array($jogos);
               $times = mysqli_query($link, "SELECT `time`.`id`, `time`.`nome` FROM `time`");
               foreach($times as $time){
           $time_id = $time['id'];
-                echo '<option value="' . $time['id'] . '">' . $time['nome'] . '</option>';
+                if($time['nome'] == $jogo['time_casa']){
+                  echo '<option value="' . $time['id'] . '" selected>' . $time['nome'] . '</option>';
+                }
+                else{
+                  echo '<option value="' . $time['id'] . '">' . $time['nome'] . '</option>';
+                }
+                
             }
           ?>
         </select>
         <label for="exampleInputName2">Placar Time da Casa</label>
-        <input type="text" class="form-control" name="placar_casa" placeholder="">
+        <input type="text" class="form-control" name="placar_casa" placeholder="<?php echo $jogo['placar_casa'] ?>">
         <input type="hidden" name="id" value="<?php echo $id_jogo ?>">
       </div>
       <br>
@@ -81,12 +87,17 @@ $jogo = mysqli_fetch_array($jogos);
           <option></option>
           <?php
               foreach($times as $time){
-                echo '<option value="' . $time['id'] . '">' . $time['nome'] . '</option>';
+               if($time['nome'] == $jogo['time_visitante']){
+                  echo '<option value="' . $time['id'] . '" selected>' . $time['nome'] . '</option>';
+                }
+                else{
+                  echo '<option value="' . $time['id'] . '">' . $time['nome'] . '</option>';
+                }
             }
           ?>
         </select>
         <label for="exampleInputName2">Placar Time Visitante</label>
-        <input type="text" class="form-control" name="placar_visitante" placeholder="">
+        <input type="text" class="form-control" name="placar_visitante" placeholder="<?php echo $jogo['placar_visitante'] ?>">
       </div>
       <button type="submit" class="button success">Editar Jogo</button>
       <a class="warning button" onclick="voltar()">Voltar</a>
@@ -94,7 +105,7 @@ $jogo = mysqli_fetch_array($jogos);
   </div>
   <div class="medium-6 large-7 cell caixa">
     <div class="row column text-center">
-    <h1>Dados anteriores do Jogo</h1>
+    <h1>Dados Atuais do Jogo</h1>
     </div>
     <table class="table table-striped">
       <tr>

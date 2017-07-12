@@ -9,6 +9,17 @@ body{
 a:hover, a:link, a:visited{
 	color: #fff;
 }
+.menu-menor{
+	max-height: 50px;
+}
+.menu-drop{
+	color: white;
+	font-size: 25px;
+	padding-left: 10px;
+}
+.menu-drop:hover, .menu-drop:link, .menu-drop:visited {
+	color: white;
+}
 .card-divider{
 	background: #283a28;
 	color: #fff;
@@ -51,11 +62,38 @@ h5{
 	color: #fff !important;
 	text-shadow: 0px 5px 5px #000;
 }
-.caixa{
+
+.vermelho{
+	color: red;
+	background-color: red;
+}
+.amarelo{
+	color: yellow;
+	background-color: yellow;
+}
+@media screen and (min-width: 650px){
+	.caixa{
 	border-top: 1px solid #283a28;
 	border-right: 1px solid #283a28;
 	border-left: 1px solid #283a28;
 	margin: 30px 15px;
 	box-shadow: 0px 5px 5px #000;
-	padding: 30px 30px;
+	}
+	.menu-menor{
+		display: none;
+	}
+}
+@media screen and (max-width: 649px){
+	.jogos{
+		font-size: 11px;
+	}
+	.caixa{
+		margin: 2px 2px;
+	}
+	.jogos button{
+		font-size: 11px;
+	}
+	.menu-maior{
+		display: none;
+	}
 }

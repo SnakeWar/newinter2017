@@ -69,16 +69,31 @@ $time = mysqli_fetch_array($times);
                 echo '<img src="../../img/barsemlona.png">';
               }
               if($time['nome'] == 'Laranjada F.C'){
-                echo '<img src="../../img/barsemlona.png">';
+                echo '<img src="../../img/laranjada.png">';
               }
             ?>
   <div class="card-section">
             <?php
-            $result = mysqli_query($link, "SELECT `nome`, `id` AS id_jogador FROM `jogador` WHERE (`jogador`.`id_time` = '$id_time') ORDER BY `jogador`.`nome` ASC");
+            $result = mysqli_query($link, "SELECT `nome`, `id` AS id_jogador, `cartao` FROM `jogador` WHERE (`jogador`.`id_time` = '$id_time') ORDER BY `jogador`.`nome` ASC");
 
             while($jogador = mysqli_fetch_array($result)){
-                echo '<p><a class="" href="remover_jogador.php?id='. $jogador['id_jogador'] .'"><span class="badge alert"><i class="step fi-x size-24"></i></span></a>  ' . $jogador['nome'] .
-                '</p>';
+                if($jogador['cartao'] == 0){
+                  echo '<p><a class="" href="remover_jogador.php?id='. $jogador['id_jogador'] .'"><span class="badge alert"><i class="fi-x"></i></span></a>  <a class="" href="add_cartao.php?id='. $jogador['id_jogador'] .'"><span class="badge warning"><i class="fi-plus"></i></span></a>  ' . $jogador['nome'] .
+                ' </p>';
+                }
+                elseif($jogador['cartao'] == 1){
+                  echo '<p><a class="" href="remover_jogador.php?id='. $jogador['id_jogador'] .'"><span class="badge alert"><i class="fi-x"></i></span></a>  <a class="" href="add_cartao.php?id='. $jogador['id_jogador'] .'"><span class="badge warning"><i class="fi-plus"></i></span></a>  ' . $jogador['nome'] .
+                ' <i class="fi-stop amarelo"></i></p>';
+                }
+                elseif($jogador['cartao'] == 2){
+                  echo '<p><a class="" href="remover_jogador.php?id='. $jogador['id_jogador'] .'"><span class="badge alert"><i class="fi-x"></i></span></a>  <a class="" href="add_cartao.php?id='. $jogador['id_jogador'] .'"><span class="badge warning"><i class="fi-plus"></i></span></a>  ' . $jogador['nome'] .
+                ' <i class="fi-stop amarelo"></i> <i class="fi-stop amarelo"></i></p>';  
+                }
+                elseif($jogador['cartao'] == 3){
+                  echo '<p><a class="" href="remover_jogador.php?id='. $jogador['id_jogador'] .'"><span class="badge alert"><i class="fi-x"></i></span></a>  <a class="" href="add_cartao.php?id='. $jogador['id_jogador'] .'"><span class="badge warning"><i class="fi-plus"></i></span></a>  ' . $jogador['nome'] .
+                ' <i class="fi-stop vermelho"></i></p>';
+                }
+                
             }
         ?>
         </div>
