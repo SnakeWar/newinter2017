@@ -37,21 +37,21 @@ if (isset($postdata)) {
     echo "erro 2";
 }*/
 include('../config/banco.php');
-$result = mysqli_query($link, "SELECT `nome`, `cartao`
-            FROM `jogador`
-            WHERE (`jogador`.`id_time` = 6)
-            ORDER BY `jogador`.`nome` ASC");
+$result = mysqli_query($link, "SELECT `info_gol`.`jogador_id`, SUM(`info_gol`.`quantidade`) as gols, `jogador`.`nome`
+          FROM `jogador`
+          LEFT JOIN `info_gol` ON `info_gol`.`jogador_id` = `jogador`.`id`
+          WHERE (`info_gol`.`quantidade` > 0) GROUP BY `jogador_id` ORDER BY SUM(`info_gol`.`quantidade`) DESC");
 
-            while($jogador_php = mysqli_fetch_assoc($result)){
+            while($artilharia_php = mysqli_fetch_assoc($result)){
 
              /*-----------------TESTE--------------------*/
 
-            $jogadores[] = $jogador_php;
+            $artilharia[] = $artilharia_php;
 
             /* -----------------TESTE------------------*/
             }
 
-            $jogadores_json = json_encode($jogadores);
-            echo "$jogadores_json";
+            $artilharia_json = json_encode($artilharia);
+            echo "$artilharia_json";
 
 ?>
