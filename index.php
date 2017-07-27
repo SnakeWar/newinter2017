@@ -26,7 +26,7 @@ $time3 = 8;
     <div class="top-bar">
       <div class="top-bar-left">
         <ul class="menu menu-maior">
-          <li class="menu-text logo-site">ALTINÃO 2017</li>
+          <li class="menu-text logo-site acme">ALTINÃO 2017</li>
         </ul>
       </div>
       <div class="top-bar-right">
@@ -51,18 +51,28 @@ $time3 = 8;
     <ul class="orbit-container">
       <button class="orbit-previous" aria-label="previous"><i class="step fi-arrow-left seta"></i></button>
       <button class="orbit-next" aria-label="next"><i class="step fi-arrow-right seta"></i></button>
-      <li class="orbit-slide is-active" style="background-image: url('img/campo1.jpg')">
+      <li class="orbit-slide is-active" style="background-image: url('img/slide1.jpg')">
         <!-- <img src="img/campo1.jpg"> -->
       </li>
-      <li class="orbit-slide" style="background-image: url('img/campo1.jpg')">
+      <!-- <li class="orbit-slide" style="background-image: url('img/slide1.jpg')">
+        <img src="img/campo1.jpg">
+      </li> -->
+      <li class="orbit-slide" style="background-image: url('img/slide2.jpg')">
         <!-- <img src="img/campo1.jpg"> -->
+        <div class="grid-container">
+    <div class="grid-x grid-padding-x">
+      <div class="medium-12 large-12 cell">
+        <div class="row column text-center mensagem">
+        <h3>A espera acabou!</h3>
+        <h4>1º rodada marcada para o dia 06/08/17</h4>
+        </div>
+        </div>
+        </div>
+        </div>
       </li>
-      <li class="orbit-slide" style="background-image: url('img/campo1.jpg')">
-        <!-- <img src="img/campo1.jpg"> -->
-      </li>
-      <li class="orbit-slide" style="background-image: url('img/campo1.jpg')">
-        <!-- <img src="img/campo1.jpg"> -->
-      </li>
+      <!-- <li class="orbit-slide" style="background-image: url('img/slide2.jpg')">
+        <img src="img/campo1.jpg">
+      </li> -->
     </ul>
   </div>
   <div class="row column text-center">
@@ -80,6 +90,7 @@ $time3 = 8;
             echo $time['nome'];
             ?>
           </div>
+
           <?php
           if($time['nome'] == 'Pé Com Chulé'){
           echo '<img src="img/pecomchule.png">';
@@ -111,7 +122,9 @@ $time3 = 8;
             elseif($jogador['cartao'] == 3){
             echo '<p>' . $jogador['nome'] . ' <i class="fi-x vermelho"></i></p>';
             }
+            
             }
+           
             ?>
           </div>
         </div>
@@ -341,7 +354,7 @@ $time3 = 8;
       </div>
     </div>
     <div class="callout large">
-      <h5 style="color: #fff">Altinão 2017</h5>
+      <h5 style="color: #fff;font-family: 'Acme', sans-serif !important;" class="acme">Altinão 2017</h5>
       <p style="color: #fff">Canguaretama/RN</p>
       <p style="color: #fff">Developed by<a href="https://www.facebook.com/mayrconmarlon.warchiefsnake"><b> SnakeWar</b></a></p>
     </div>

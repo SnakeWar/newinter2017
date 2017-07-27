@@ -49,7 +49,7 @@ mysqli_query($link, $add) or die(mysqli_error($link));
         <form>
             <div class="form-group">
                 <label for="exampleInputName2">Data</label>
-                <input type="text" class="form-control" id="calendario" name="data" placeholder="">
+                <input type="text" class="form-control" data-date-format="dd/mm/yy" id="dp1" name="data" placeholder="">
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail2">Time Casa</label>

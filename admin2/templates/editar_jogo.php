@@ -55,7 +55,7 @@ $jogo = mysqli_fetch_array($jogos);
     <form>
       <div class="form-group">
         <label for="exampleInputName2">Data</label>
-        <input type="text" class="form-control" id="calendario" value="<?php echo $jogo['data']//date('d/m/Y', strtotime($jogo['data']))?>" name="data" placeholder="">
+        <input type="text" class="form-control span2" data-date-format="dd/mm/yy" id="dp1" value="<?php echo $jogo['data']?>" name="data" placeholder="">
       </div>
       <br>
       <div class="form-group">
@@ -77,7 +77,7 @@ $jogo = mysqli_fetch_array($jogos);
           ?>
         </select>
         <label for="exampleInputName2">Placar Time da Casa</label>
-        <input type="text" class="form-control" name="placar_casa" placeholder="<?php echo $jogo['placar_casa'] ?>">
+        <input type="text" class="form-control" name="placar_casa" value="<?php echo $jogo['placar_casa'] ?>">
         <input type="hidden" name="id" value="<?php echo $id_jogo ?>">
       </div>
       <br>
@@ -97,7 +97,7 @@ $jogo = mysqli_fetch_array($jogos);
           ?>
         </select>
         <label for="exampleInputName2">Placar Time Visitante</label>
-        <input type="text" class="form-control" name="placar_visitante" placeholder="<?php echo $jogo['placar_visitante'] ?>">
+        <input type="text" class="form-control" name="placar_visitante" value="<?php echo $jogo['placar_visitante'] ?>">
       </div>
       <button type="submit" class="button success">Editar Jogo</button>
       <a class="warning button" onclick="voltar()">Voltar</a>
@@ -124,9 +124,6 @@ $jogo = mysqli_fetch_array($jogos);
   function voltar(){
     window.location = "jogos.php";
   };
-  $(function() {
-$( "#calendario" ).datepicker({ dateFormat: 'dd/mm/yy' });
-});
 </script>
 <?php
 mysqli_close($link);
