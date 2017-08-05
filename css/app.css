@@ -17,12 +17,20 @@ a:hover, a:link, a:visited{
 	max-height: 50px;
 }
 .menu-drop{
-	color: white;
+	color: #283a28;
 	font-size: 25px;
 	padding-left: 10px;
 }
 .menu-drop:hover, .menu-drop:link, .menu-drop:visited {
-	color: white;
+	color: #283a28;
+
+}
+.menu-text a{
+	color: #283a28;
+
+}
+.top-bar{
+	border-bottom: solid 1px #e6e6e6;
 }
 @media screen and (max-width: 480px){
 	.orbit-container{
@@ -88,11 +96,19 @@ a:hover, a:link, a:visited{
 		display: none;
 	}
 }
-.callout, .top-bar, .top-bar ul, .top-bar-left, .top-bar-right, .menu li{
-	background: #283a28;
+.top-bar, .top-bar ul, .top-bar-left, .top-bar-right, .menu li{
+	background: #fff;
 }
 .callout{
 	text-shadow: 0px 5px 5px #000;
+	background: #283a28;
+}
+.admin{
+	color: #283a28;
+	font-weight: bold;
+}
+.admin:hover, .admin:link, .admin:visited{
+	color: #283a28;
 }
 /*h2{
 	font-family: 'Rationale', sans-serif;
@@ -114,6 +130,11 @@ h5{
 	color: #fff !important;
 	text-shadow: 0px 5px 5px #000;
 }
+.logo-site img{
+	 width: 150px;
+
+ }
+
 .acme{
 	font-family: 'Acme', sans-serif !important;
 }

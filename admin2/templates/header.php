@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Acme|Questrial" rel="stylesheet">
     <link rel="stylesheet" href="../../css/foundation-icons.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation-datepicker/1.5.0/css/foundation-datepicker.min.css" />
+      <link rel="icon" href="../../img/favicon.png" />
     <!-- <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
     <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
     <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script> -->

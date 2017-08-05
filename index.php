@@ -20,25 +20,26 @@ $time3 = 8;
     <link rel="stylesheet" href="css/app.css" />
     <link href="https://fonts.googleapis.com/css?family=Acme|Questrial" rel="stylesheet">
     <link rel="stylesheet" href="css/foundation-icons.css" />
+      <link rel="icon" href="img/favicon.png" />
   </head>
   <body>
     <!-- Start Top Bar -->
     <div class="top-bar">
       <div class="top-bar-left">
         <ul class="menu menu-maior">
-          <li class="menu-text logo-site acme">ALTINÃO 2017</li>
+          <li class="menu-text logo-site acme"><img src="img/altinao_pequeno_verde.png"></li>
         </ul>
       </div>
       <div class="top-bar-right">
         <ul class="menu menu-maior">
-          <li><a class="logo-site" href="admin2/index.php">ADMIN</a></li>
+          <li><a class="admin" href="admin2/index.php">ADMIN</a></li>
         </ul>
         <ul class="menu dropdown menu-menor" data-dropdown-menu>
           <li>
             <i class="fi-list menu-drop"><a href="#"></a></i>
             <ul class="menu">
-              <li class="menu-text"><a class="logo-site" href="index.php">ALTINÃO 2017</a></li>
-              <li class="menu-text"><a class="logo-site" href="admin2/index.php">ADMIN</a></li>
+              <li class="menu-text"><a href="index.php">ALTINÃO 2017</a></li>
+              <li class="menu-text"><a href="admin2/index.php">ADMIN</a></li>
             </ul>
           </li>
         </ul>
@@ -85,7 +86,7 @@ $time3 = 8;
         <div class="card"">
           <div class="card-divider">
             <?php
-            $result = mysqli_query($link, "SELECT `nome` FROM `time` WHERE `id` = $time1") or die(mysql_errno($link));
+            $result = mysqli_query($link, "SELECT `nome` FROM `time` WHERE `id` = $time1");
             $time = mysqli_fetch_array($result);
             echo $time['nome'];
             ?>
