@@ -57,7 +57,8 @@ $timeb = $jogo['timev_id'];
                     $result_gols = mysqli_query($link, "SELECT jo.nome AS jogador, gol.quantidade AS gols FROM info_gol AS gol LEFT JOIN jogador AS jo ON jo.id = gol.jogador_id WHERE gol.jogo_id = '$id_jogo'");
             while ($gols = mysqli_fetch_array($result_gols))
             {
-                echo '<tr><td></td><td></td><td><i><u><b>' . $gols['jogador'] . '</b>: ' . $gols['gols'] . ' Gol(s)</i></u></td><td></td></tr>';
+                echo '<tr><td></td><td></td><td><i><u><b>' . $gols['jogador'] . '</b>: ' . $gols['gols'] . ' Gol(s)</i></u></td><td><button class="alert button" onclick="excluir(' . $gols['id'] . ',"' . $id_jogo . '")">Excluir</button>
+    </td></tr>';
             }
                     ?></td></tr>
         </table>
@@ -94,6 +95,9 @@ $timeb = $jogo['timev_id'];
     <script type="text/javascript">
     function voltar(){
     window.location = "jogos.php";
+    }
+    function excluir(id, id_jogo){
+    window.location = "excluir_gol.php?=id" + id + "id_jogo=" + id_jogo;
     }
     </script>
     <?php
