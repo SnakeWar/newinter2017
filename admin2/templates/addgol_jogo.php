@@ -52,7 +52,14 @@ $timeb = $jogo['timev_id'];
                 <th>Placar</th>
                 <th>Time (Visitante)</th>
             </tr>
-            <tr><td><?php echo $jogo['data'] ?></td><td><?php echo $jogo['time_casa'] ?></td><td><?php echo $jogo['placar_casa']?> X <?php echo $jogo['placar_visitante']?></td><td><?php echo $jogo['time_visitante']?></td></tr>
+            <tr><td><?php
+                    echo $jogo['data'] ?></td><td><?php echo $jogo['time_casa'] ?></td><td><?php echo $jogo['placar_casa']?> X <?php echo $jogo['placar_visitante']?></td><td><?php echo $jogo['time_visitante'];
+                    $result_gols = mysqli_query($link, "SELECT jo.nome AS jogador, gol.quantidade AS gols FROM info_gol AS gol LEFT JOIN jogador AS jo ON jo.id = gol.jogador_id WHERE gol.jogo_id = '$id_jogo'");
+            while ($gols = mysqli_fetch_array($result_gols))
+            {
+                echo '<tr><td></td><td></td><td><i><u><b>' . $gols['jogador'] . '</b>: ' . $gols['gols'] . ' Gol(s)</i></u></td><td></td></tr>';
+            }
+                    ?></td></tr>
         </table>
     </div>
          <!-- --------Artilheiro------------- -->

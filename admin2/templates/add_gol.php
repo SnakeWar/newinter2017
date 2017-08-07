@@ -22,6 +22,7 @@ echo '<br><a class="btn btn-success" href="addgol_jogo.php">Voltar</a>';
 		var_dump($id_jogo);
 		var_dump($jogador_id);
 		var_dump($quantidade);
+
 		$add = "INSERT INTO info_gol (id, jogador_id, quantidade, jogo_id) VALUES (NULL, '$jogador_id', '$quantidade', '$id_jogo')";
 		mysqli_query($link, $add) or die(mysqli_error($link));
 		/*unset($_POST['id_time']);

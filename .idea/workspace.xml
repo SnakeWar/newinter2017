@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83661214-8052-4c74-842f-9341b1e71497" name="Default" comment="Fiz nada">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin2/header.php" afterPath="$PROJECT_DIR$/admin2/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin2/templates/header.php" afterPath="$PROJECT_DIR$/admin2/templates/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin2/templates/header2.php" afterPath="$PROJECT_DIR$/admin2/templates/header2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/app.css" afterPath="$PROJECT_DIR$/css/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin2/templates/add_gol.php" afterPath="$PROJECT_DIR$/admin2/templates/add_gol.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin2/templates/addgol_jogo.php" afterPath="$PROJECT_DIR$/admin2/templates/addgol_jogo.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,18 +17,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="artilharia.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/artilharia.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1501202663956" expanded="true" signature="1540:1837" ph="SELECT `info... jogador" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="banco.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/banco.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -40,28 +27,56 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="48" />
+            <state relative-caret-position="238">
+              <caret line="290" column="81" lean-forward="true" selection-start-line="290" selection-start-column="81" selection-end-line="290" selection-end-column="81" />
               <folding>
-                <marker date="1501931944410" expanded="true" signature="3058:3097" ph="SELECT `nome... time" />
-                <marker date="1501931944410" expanded="true" signature="3685:3826" ph="SELECT `nome... jogador" />
-                <marker date="1501931944410" expanded="true" signature="4714:4753" ph="SELECT `nome... time" />
-                <marker date="1501931944410" expanded="true" signature="5354:5495" ph="SELECT `nome... jogador" />
-                <marker date="1501931944410" expanded="true" signature="6358:6397" ph="SELECT `nome... time" />
-                <marker date="1501931944410" expanded="true" signature="6998:7139" ph="SELECT `nome... jogador" />
-                <marker date="1501931944410" expanded="true" signature="8316:8374" ph="SELECT `nome... time" />
-                <marker date="1501931944410" expanded="true" signature="8529:8547" ph="..." />
-                <marker date="1501931944410" expanded="true" signature="8961:9258" ph="SELECT `info... jogador" />
-                <marker date="1501931944410" expanded="true" signature="9343:9460" ph="..." />
-                <marker date="1501931944410" expanded="false" signature="9404:9422" ph="..." />
-                <marker date="1501931944410" expanded="true" signature="10047:10319" ph="SELECT j.id jogo" />
-                <marker date="1501931944410" expanded="true" signature="10575:10593" ph="..." />
-                <marker date="1501931944410" expanded="true" signature="10763:10914" ph="SELECT jo.no... info_gol" />
-                <marker date="1501931944410" expanded="true" signature="11607:11910" ph="SELECT `info... jogador" />
-                <marker date="1501931944410" expanded="true" signature="11999:12091" ph="..." />
+                <marker date="1502114124467" expanded="true" signature="3058:3097" ph="SELECT `nome... time" />
+                <marker date="1502114124467" expanded="true" signature="3685:3826" ph="SELECT `nome... jogador" />
+                <marker date="1502114124467" expanded="true" signature="4714:4753" ph="SELECT `nome... time" />
+                <marker date="1502114124467" expanded="true" signature="5354:5495" ph="SELECT `nome... jogador" />
+                <marker date="1502114124467" expanded="true" signature="6358:6397" ph="SELECT `nome... time" />
+                <marker date="1502114124467" expanded="true" signature="6998:7139" ph="SELECT `nome... jogador" />
+                <marker date="1502114124467" expanded="true" signature="8316:8374" ph="SELECT `nome... time" />
+                <marker date="1502114124467" expanded="true" signature="8529:8547" ph="..." />
+                <marker date="1502114124467" expanded="true" signature="8961:9258" ph="SELECT `info... jogador" />
+                <marker date="1502114124467" expanded="true" signature="9343:9460" ph="..." />
+                <marker date="1502114124467" expanded="false" signature="9404:9422" ph="..." />
+                <marker date="1502114124467" expanded="true" signature="10047:10318" ph="SELECT j.id jogo" />
+                <marker date="1502114124467" expanded="true" signature="10574:10592" ph="..." />
+                <marker date="1502114124467" expanded="true" signature="10762:10913" ph="SELECT jo.no... info_gol" />
+                <marker date="1502114124467" expanded="true" signature="11606:11909" ph="SELECT `info... jogador" />
+                <marker date="1502114124467" expanded="true" signature="11998:12090" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_gol.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin2/templates/add_gol.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="131" lean-forward="false" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="131" />
+              <folding>
+                <marker date="1502113489636" expanded="true" signature="698:812" ph="INSERT INTO info_gol... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addgol_jogo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin2/templates/addgol_jogo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="56" column="202" lean-forward="false" selection-start-line="56" selection-start-column="202" selection-end-line="56" selection-end-column="202" />
+              <folding>
+                <marker date="1502113597208" expanded="true" signature="186:495" ph="SELECT j.id jogo" />
+                <marker date="1502113597208" expanded="true" signature="1252:1457" ph="SELECT jogad... jogador" />
+                <marker date="1502113597208" expanded="true" signature="2779:2930" ph="SELECT jo.no... info_gol" />
+                <marker date="1502113597208" expanded="true" signature="3569:3860" ph="SELECT `info... jogador" />
+                <marker date="1502113597208" expanded="true" signature="3941:4031" ph="..." />
               </folding>
             </state>
           </provider>
@@ -70,7 +85,7 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin2/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="544">
               <caret line="32" column="39" lean-forward="false" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
               <folding />
             </state>
@@ -97,7 +112,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
@@ -141,11 +156,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/css/admin.css" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/admin2/templates/header.php" />
         <option value="$PROJECT_DIR$/admin2/templates/header2.php" />
         <option value="$PROJECT_DIR$/admin2/header.php" />
         <option value="$PROJECT_DIR$/css/app.css" />
+        <option value="$PROJECT_DIR$/admin2/templates/add_gol.php" />
+        <option value="$PROJECT_DIR$/admin2/templates/addgol_jogo.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -177,8 +194,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -229,20 +244,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newinter2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newinter2017" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="admin2" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -267,6 +268,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -301,21 +304,23 @@
       <workItem from="1501728841190" duration="61000" />
       <workItem from="1501876079766" duration="7017000" />
       <workItem from="1501900114245" duration="708000" />
-      <workItem from="1501929560320" duration="3354000" />
+      <workItem from="1501929560320" duration="4100000" />
+      <workItem from="1502112829842" duration="1296000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13362000" />
+    <option name="totallyTimeSpent" value="15404000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -361,25 +366,116 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="48" />
+          <folding>
+            <marker date="1502114124467" expanded="true" signature="3058:3097" ph="SELECT `nome... time" />
+            <marker date="1502114124467" expanded="true" signature="3685:3826" ph="SELECT `nome... jogador" />
+            <marker date="1502114124467" expanded="true" signature="4714:4753" ph="SELECT `nome... time" />
+            <marker date="1502114124467" expanded="true" signature="5354:5495" ph="SELECT `nome... jogador" />
+            <marker date="1502114124467" expanded="true" signature="6358:6397" ph="SELECT `nome... time" />
+            <marker date="1502114124467" expanded="true" signature="6998:7139" ph="SELECT `nome... jogador" />
+            <marker date="1502114124467" expanded="true" signature="8316:8374" ph="SELECT `nome... time" />
+            <marker date="1502114124467" expanded="true" signature="8529:8547" ph="..." />
+            <marker date="1502114124467" expanded="true" signature="8961:9258" ph="SELECT `info... jogador" />
+            <marker date="1502114124467" expanded="true" signature="9343:9460" ph="..." />
+            <marker date="1502114124467" expanded="false" signature="9404:9422" ph="..." />
+            <marker date="1502114124467" expanded="true" signature="10047:10318" ph="SELECT j.id jogo" />
+            <marker date="1502114124467" expanded="true" signature="10574:10592" ph="..." />
+            <marker date="1502114124467" expanded="true" signature="10762:10913" ph="SELECT jo.no... info_gol" />
+            <marker date="1502114124467" expanded="true" signature="11606:11909" ph="SELECT `info... jogador" />
+            <marker date="1502114124467" expanded="true" signature="11998:12090" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin2/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="39" lean-forward="false" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin2/templates/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin2/templates/header2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="23" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/foundation.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="37" lean-forward="false" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/artilharia.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1501202663956" expanded="true" signature="1540:1837" ph="SELECT `info... jogador" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/banco.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="64" lean-forward="false" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="93" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="93" />
           <folding>
-            <marker date="1501931944410" expanded="true" signature="3058:3097" ph="SELECT `nome... time" />
-            <marker date="1501931944410" expanded="true" signature="3685:3826" ph="SELECT `nome... jogador" />
-            <marker date="1501931944410" expanded="true" signature="4714:4753" ph="SELECT `nome... time" />
-            <marker date="1501931944410" expanded="true" signature="5354:5495" ph="SELECT `nome... jogador" />
-            <marker date="1501931944410" expanded="true" signature="6358:6397" ph="SELECT `nome... time" />
-            <marker date="1501931944410" expanded="true" signature="6998:7139" ph="SELECT `nome... jogador" />
-            <marker date="1501931944410" expanded="true" signature="8316:8374" ph="SELECT `nome... time" />
-            <marker date="1501931944410" expanded="true" signature="8529:8547" ph="..." />
-            <marker date="1501931944410" expanded="true" signature="8961:9258" ph="SELECT `info... jogador" />
-            <marker date="1501931944410" expanded="true" signature="9343:9460" ph="..." />
-            <marker date="1501931944410" expanded="false" signature="9404:9422" ph="..." />
-            <marker date="1501931944410" expanded="true" signature="10047:10319" ph="SELECT j.id jogo" />
-            <marker date="1501931944410" expanded="true" signature="10575:10593" ph="..." />
-            <marker date="1501931944410" expanded="true" signature="10763:10914" ph="SELECT jo.no... info_gol" />
-            <marker date="1501931944410" expanded="true" signature="11607:11910" ph="SELECT `info... jogador" />
-            <marker date="1501931944410" expanded="true" signature="11999:12091" ph="..." />
+            <marker date="1502114124467" expanded="true" signature="3058:3097" ph="SELECT `nome... time" />
+            <marker date="1502114124467" expanded="true" signature="3685:3826" ph="SELECT `nome... jogador" />
+            <marker date="1502114124467" expanded="true" signature="4714:4753" ph="SELECT `nome... time" />
+            <marker date="1502114124467" expanded="true" signature="5354:5495" ph="SELECT `nome... jogador" />
+            <marker date="1502114124467" expanded="true" signature="6358:6397" ph="SELECT `nome... time" />
+            <marker date="1502114124467" expanded="true" signature="6998:7139" ph="SELECT `nome... jogador" />
+            <marker date="1502114124467" expanded="true" signature="8316:8374" ph="SELECT `nome... time" />
+            <marker date="1502114124467" expanded="true" signature="8529:8547" ph="..." />
+            <marker date="1502114124467" expanded="true" signature="8961:9258" ph="SELECT `info... jogador" />
+            <marker date="1502114124467" expanded="true" signature="9343:9460" ph="..." />
+            <marker date="1502114124467" expanded="false" signature="9404:9422" ph="..." />
+            <marker date="1502114124467" expanded="true" signature="10047:10318" ph="SELECT j.id jogo" />
+            <marker date="1502114124467" expanded="true" signature="10574:10592" ph="..." />
+            <marker date="1502114124467" expanded="true" signature="10762:10913" ph="SELECT jo.no... info_gol" />
+            <marker date="1502114124467" expanded="true" signature="11606:11909" ph="SELECT `info... jogador" />
+            <marker date="1502114124467" expanded="true" signature="11998:12090" ph="..." />
           </folding>
         </state>
       </provider>
@@ -439,22 +535,22 @@
         <state relative-caret-position="476">
           <caret line="28" column="93" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="93" />
           <folding>
-            <marker date="1501931944410" expanded="true" signature="3058:3097" ph="SELECT `nome... time" />
-            <marker date="1501931944410" expanded="true" signature="3685:3826" ph="SELECT `nome... jogador" />
-            <marker date="1501931944410" expanded="true" signature="4714:4753" ph="SELECT `nome... time" />
-            <marker date="1501931944410" expanded="true" signature="5354:5495" ph="SELECT `nome... jogador" />
-            <marker date="1501931944410" expanded="true" signature="6358:6397" ph="SELECT `nome... time" />
-            <marker date="1501931944410" expanded="true" signature="6998:7139" ph="SELECT `nome... jogador" />
-            <marker date="1501931944410" expanded="true" signature="8316:8374" ph="SELECT `nome... time" />
-            <marker date="1501931944410" expanded="true" signature="8529:8547" ph="..." />
-            <marker date="1501931944410" expanded="true" signature="8961:9258" ph="SELECT `info... jogador" />
-            <marker date="1501931944410" expanded="true" signature="9343:9460" ph="..." />
-            <marker date="1501931944410" expanded="false" signature="9404:9422" ph="..." />
-            <marker date="1501931944410" expanded="true" signature="10047:10319" ph="SELECT j.id jogo" />
-            <marker date="1501931944410" expanded="true" signature="10575:10593" ph="..." />
-            <marker date="1501931944410" expanded="true" signature="10763:10914" ph="SELECT jo.no... info_gol" />
-            <marker date="1501931944410" expanded="true" signature="11607:11910" ph="SELECT `info... jogador" />
-            <marker date="1501931944410" expanded="true" signature="11999:12091" ph="..." />
+            <marker date="1502114124467" expanded="true" signature="3058:3097" ph="SELECT `nome... time" />
+            <marker date="1502114124467" expanded="true" signature="3685:3826" ph="SELECT `nome... jogador" />
+            <marker date="1502114124467" expanded="true" signature="4714:4753" ph="SELECT `nome... time" />
+            <marker date="1502114124467" expanded="true" signature="5354:5495" ph="SELECT `nome... jogador" />
+            <marker date="1502114124467" expanded="true" signature="6358:6397" ph="SELECT `nome... time" />
+            <marker date="1502114124467" expanded="true" signature="6998:7139" ph="SELECT `nome... jogador" />
+            <marker date="1502114124467" expanded="true" signature="8316:8374" ph="SELECT `nome... time" />
+            <marker date="1502114124467" expanded="true" signature="8529:8547" ph="..." />
+            <marker date="1502114124467" expanded="true" signature="8961:9258" ph="SELECT `info... jogador" />
+            <marker date="1502114124467" expanded="true" signature="9343:9460" ph="..." />
+            <marker date="1502114124467" expanded="false" signature="9404:9422" ph="..." />
+            <marker date="1502114124467" expanded="true" signature="10047:10318" ph="SELECT j.id jogo" />
+            <marker date="1502114124467" expanded="true" signature="10574:10592" ph="..." />
+            <marker date="1502114124467" expanded="true" signature="10762:10913" ph="SELECT jo.no... info_gol" />
+            <marker date="1502114124467" expanded="true" signature="11606:11909" ph="SELECT `info... jogador" />
+            <marker date="1502114124467" expanded="true" signature="11998:12090" ph="..." />
           </folding>
         </state>
       </provider>
@@ -573,14 +669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/banco.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="64" lean-forward="false" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/foundation.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -594,31 +682,6 @@
         <state relative-caret-position="663">
           <caret line="39" column="23" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="23" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="48" />
-          <folding>
-            <marker date="1501931944410" expanded="true" signature="3058:3097" ph="SELECT `nome... time" />
-            <marker date="1501931944410" expanded="true" signature="3685:3826" ph="SELECT `nome... jogador" />
-            <marker date="1501931944410" expanded="true" signature="4714:4753" ph="SELECT `nome... time" />
-            <marker date="1501931944410" expanded="true" signature="5354:5495" ph="SELECT `nome... jogador" />
-            <marker date="1501931944410" expanded="true" signature="6358:6397" ph="SELECT `nome... time" />
-            <marker date="1501931944410" expanded="true" signature="6998:7139" ph="SELECT `nome... jogador" />
-            <marker date="1501931944410" expanded="true" signature="8316:8374" ph="SELECT `nome... time" />
-            <marker date="1501931944410" expanded="true" signature="8529:8547" ph="..." />
-            <marker date="1501931944410" expanded="true" signature="8961:9258" ph="SELECT `info... jogador" />
-            <marker date="1501931944410" expanded="true" signature="9343:9460" ph="..." />
-            <marker date="1501931944410" expanded="false" signature="9404:9422" ph="..." />
-            <marker date="1501931944410" expanded="true" signature="10047:10319" ph="SELECT j.id jogo" />
-            <marker date="1501931944410" expanded="true" signature="10575:10593" ph="..." />
-            <marker date="1501931944410" expanded="true" signature="10763:10914" ph="SELECT jo.no... info_gol" />
-            <marker date="1501931944410" expanded="true" signature="11607:11910" ph="SELECT `info... jogador" />
-            <marker date="1501931944410" expanded="true" signature="11999:12091" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -640,7 +703,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin2/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="544">
           <caret line="32" column="39" lean-forward="false" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
           <folding />
         </state>
@@ -651,6 +714,63 @@
         <state relative-caret-position="340">
           <caret line="32" column="37" lean-forward="false" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/banco.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="64" lean-forward="false" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin2/templates/add_gol.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="131" lean-forward="false" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="131" />
+          <folding>
+            <marker date="1502113489636" expanded="true" signature="698:812" ph="INSERT INTO info_gol... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin2/templates/addgol_jogo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="56" column="202" lean-forward="false" selection-start-line="56" selection-start-column="202" selection-end-line="56" selection-end-column="202" />
+          <folding>
+            <marker date="1502113597208" expanded="true" signature="186:495" ph="SELECT j.id jogo" />
+            <marker date="1502113597208" expanded="true" signature="1252:1457" ph="SELECT jogad... jogador" />
+            <marker date="1502113597208" expanded="true" signature="2779:2930" ph="SELECT jo.no... info_gol" />
+            <marker date="1502113597208" expanded="true" signature="3569:3860" ph="SELECT `info... jogador" />
+            <marker date="1502113597208" expanded="true" signature="3941:4031" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="290" column="81" lean-forward="true" selection-start-line="290" selection-start-column="81" selection-end-line="290" selection-end-column="81" />
+          <folding>
+            <marker date="1502114124467" expanded="true" signature="3058:3097" ph="SELECT `nome... time" />
+            <marker date="1502114124467" expanded="true" signature="3685:3826" ph="SELECT `nome... jogador" />
+            <marker date="1502114124467" expanded="true" signature="4714:4753" ph="SELECT `nome... time" />
+            <marker date="1502114124467" expanded="true" signature="5354:5495" ph="SELECT `nome... jogador" />
+            <marker date="1502114124467" expanded="true" signature="6358:6397" ph="SELECT `nome... time" />
+            <marker date="1502114124467" expanded="true" signature="6998:7139" ph="SELECT `nome... jogador" />
+            <marker date="1502114124467" expanded="true" signature="8316:8374" ph="SELECT `nome... time" />
+            <marker date="1502114124467" expanded="true" signature="8529:8547" ph="..." />
+            <marker date="1502114124467" expanded="true" signature="8961:9258" ph="SELECT `info... jogador" />
+            <marker date="1502114124467" expanded="true" signature="9343:9460" ph="..." />
+            <marker date="1502114124467" expanded="false" signature="9404:9422" ph="..." />
+            <marker date="1502114124467" expanded="true" signature="10047:10318" ph="SELECT j.id jogo" />
+            <marker date="1502114124467" expanded="true" signature="10574:10592" ph="..." />
+            <marker date="1502114124467" expanded="true" signature="10762:10913" ph="SELECT jo.no... info_gol" />
+            <marker date="1502114124467" expanded="true" signature="11606:11909" ph="SELECT `info... jogador" />
+            <marker date="1502114124467" expanded="true" signature="11998:12090" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
