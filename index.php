@@ -52,20 +52,18 @@ $time3 = 8;
     <ul class="orbit-container">
       <button class="orbit-previous" aria-label="previous"><i class="step fi-arrow-left seta"></i></button>
       <button class="orbit-next" aria-label="next"><i class="step fi-arrow-right seta"></i></button>
-      <li class="orbit-slide is-active" style="background-image: url('img/slide1.jpg')">
+      <li class="orbit-slide is-active" style="background-image: url('img/barsemlona.jpg')">
         <!-- <img src="img/campo1.jpg"> -->
       </li>
-      <!-- <li class="orbit-slide" style="background-image: url('img/slide1.jpg')">
-        <img src="img/campo1.jpg">
-      </li> -->
-      <li class="orbit-slide" style="background-image: url('img/slide2.jpg')">
+      <li class="orbit-slide" style="background-image: url('img/laranjada.jpg')">
+
+      </li>
+      <li class="orbit-slide" style="background-image: url('img/pecomchule.jpg')">
         <!-- <img src="img/campo1.jpg"> -->
         <div class="grid-container">
     <div class="grid-x grid-padding-x">
       <div class="medium-12 large-12 cell">
         <div class="row column text-center mensagem">
-        <h3>A espera acabou!</h3>
-        <h4>1º rodada marcada para o dia 06/08/17</h4>
         </div>
         </div>
         </div>
