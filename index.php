@@ -218,7 +218,7 @@ $time3 = 8;
       </div>
     </div>
   </div>
-  <div class="grid-container caixa pagina-inicial">
+  <div class="grid-container pagina-inicial">
     <div class="grid-x grid-padding-x">
       <div class="medium-6 large-4 cell">
         <div class="row column text-center">
@@ -229,16 +229,20 @@ $time3 = 8;
           <thead>
             <tr>
               <th>Time</th>
+              <th>GP</th>
+              <th>GC</th>
+              <th>Saldo</th>
               <th>Ponto(s)</th>
             </tr>
           </thead>
           <tbody>
             <?php
-            $result = mysqli_query($link, "SELECT `nome`, `pontos` FROM `time` ORDER BY `pontos` DESC");
+            $result = mysqli_query($link, "SELECT `nome`, `pontos`, `gols_pro`, `gols_con`, `saldo` FROM `time` ORDER BY `pontos` DESC");
             while ($classificacao = mysqli_fetch_array($result))
             {
-            echo '<tr><td>' . $classificacao['nome'] . '</td><td style="text-align: center">' . $classificacao['pontos'] .
-          '</tr>';
+            echo '<tr><td>' . $classificacao['nome'] . '</td><td style="text-align: center">' . $classificacao['gols_pro'] .
+          '<td style="text-align: center">' . $classificacao['gols_con'] . '</td><td style="text-align: center">' . $classificacao['saldo'] .
+          '<td style="text-align: center">' . $classificacao['pontos'] . '</tr>';
           }
           ?>
         </tbody>
@@ -251,7 +255,7 @@ $time3 = 8;
         <thead>
           <tr>
             <th>Jogador</th>
-            <th>Gol(s)</th>
+            <th style="text-align: right">Gol(s)</th>
           </tr>
         </thead>
         <tbody>
@@ -262,7 +266,7 @@ $time3 = 8;
           WHERE (`info_gol`.`quantidade` > 0) GROUP BY `jogador_id` ORDER BY SUM(`info_gol`.`quantidade`) DESC");
           while($artilheiro = mysqli_fetch_array($result)){
           echo   '<tr>
-            <td>' . $artilheiro['nome'] . '</td><td style="text-align: center">' . $artilheiro['gols'] . '</td></tr>';
+            <td>' . $artilheiro['nome'] . '</td><td style="text-align: right">' . $artilheiro['gols'] . '</td></tr>';
             }
             ?>
           </tbody>

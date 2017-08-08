@@ -37,7 +37,7 @@ if (isset($postdata)) {
     echo "erro 2";
 }*/
 include('../config/banco.php');
-$result = mysqli_query($link, "SELECT `nome`, `pontos` FROM `time` ORDER BY `pontos` DESC");
+$result = mysqli_query($link, "SELECT `nome`, `pontos`, `gols_pro`, `gols_con`, `saldo` FROM `time` ORDER BY `pontos` DESC");
 
             while($tabela_php = mysqli_fetch_assoc($result)){
 
