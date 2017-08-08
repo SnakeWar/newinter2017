@@ -40,15 +40,18 @@ else{
     </div>
     <table class="table table-striped">
       <tr>
-        <th>Nome</th>
-        <th>Pontos</th>
+        <th class="ali-esquerda">Nome</th>
+        <th class="ali-centro">GP</th>
+          <th class="ali-centro">GC</th>
+          <th class="ali-centro">Saldo</th>
+          <th class="ali-centro">Pontos</th>
         <th>Ações</th>
       </tr>
       <?php
-      $result = "SELECT nome, pontos, id FROM time ORDER BY pontos DESC";
+      $result = "SELECT nome, pontos, id, gols_pro, gols_con, saldo FROM time ORDER BY pontos DESC";
       $times = mysqli_query($link, $result);
       foreach($times as $time){
-        echo '<tr><td>' . $time['nome'] . '</td><td style="text-align: center;">' . $time['pontos'] . '</td><td><button type="submit" class=" warning button" onclick="editar('. $time['id'] .')">Editar</button> <button type="submit" class="alert button" onclick="confirmacao('. $time['id'] .')">Excluir</button></td></tr>';
+        echo '<tr><td>' . $time['nome'] . '</td><td class="ali-centro">' . $time['gols_pro'] . '</td><td class="ali-centro">' . $time['gols_con'] . '</td><td class="ali-centro">' . $time['saldo'] . '</td><td class="ali-centro">' . $time['pontos'] . '</td><td class="ali-centro"><button type="submit" class=" warning button" onclick="editar('. $time['id'] .')">Editar</button> <button type="submit" class="alert button" onclick="confirmacao('. $time['id'] .')">Excluir</button></td></tr>';
       }
       ?>
     </table>

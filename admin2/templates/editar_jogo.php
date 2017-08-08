@@ -99,7 +99,7 @@ $jogo = mysqli_fetch_array($jogos);
         <label for="exampleInputName2">Placar Time Visitante</label>
         <input type="text" class="form-control" name="placar_visitante" value="<?php echo $jogo['placar_visitante'] ?>">
       </div>
-      <button type="submit" class="button success">Editar Jogo</button>
+      <button type="submit" class="button success">Salvar</button>
       <a class="warning button" onclick="voltar()">Voltar</a>
     </form>
   </div>
@@ -109,12 +109,12 @@ $jogo = mysqli_fetch_array($jogos);
     </div>
     <table class="table table-striped">
       <tr>
-        <th>Data</th>
-        <th>Time (Casa)</th>
-        <th>Placar</th>
-        <th>Time (Visitante)</th>
+        <th class="ali-centro">Data</th>
+        <th class="ali-direita">Time (Casa)</th>
+        <th class="ali-centro">Placar</th>
+        <th class="ali-esquerda">Time (Visitante)</th>
       </tr>
-      <tr><td><?php echo $jogo['data'] ?></td><td><?php echo $jogo['time_casa'] ?></td><td><?php echo $jogo['placar_casa']?> X <?php echo $jogo['placar_visitante']?></td><td><?php echo $jogo['time_visitante']?></td></tr>
+      <tr><td class="ali-centro"><?php echo $jogo['data'] ?></td><td class="ali-direita"><?php echo $jogo['time_casa'] ?></td><td class="ali-centro"><?php echo $jogo['placar_casa']?> X <?php echo $jogo['placar_visitante']?></td><td class="ali-esquerda"><?php echo $jogo['time_visitante']?></td></tr>
     </table>
   </div>
 </div>

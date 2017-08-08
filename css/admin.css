@@ -36,6 +36,12 @@ a:hover, a:link, a:visited{
 .ali-direita{
 	text-align: right;
 }
+.ali-esquerda{
+	text-align: left;
+}
+.ali-centro{
+	text-align: center;
+}
 .callout, .top-bar, .top-bar ul, .top-bar-left, .top-bar-right, .menu li{
 	background: #283a28;
 }
