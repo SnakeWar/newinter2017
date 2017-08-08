@@ -15,9 +15,6 @@ a:hover, a:link, a:visited{
 }
 .menu-menor{
 	max-height: 50px;
-	margin-left: 15px;
-}
-.menu-drop{
 	color: #283a28;
 	font-size: 25px;
 	padding-left: 10px;
@@ -40,6 +37,7 @@ a:hover, a:link, a:visited{
 }
 .orbit-container li{
 	text-align: center;
+
 	height: 800px;
 	background-size: cover;
 	background-position: center center;
