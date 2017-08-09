@@ -132,7 +132,7 @@ $time3 = 8;
         <div class="card"">
           <div class="card-divider">
             <?php
-            $result = mysqli_query($link, "SELECT `nome` FROM `time` WHERE `id` = $time2") or die(mysql_errno($link));
+            $result = mysqli_query($link, "SELECT `nome` FROM `time` WHERE `id` = $time2") or die(mysqli_errno($link));
             $time = mysqli_fetch_array($result);
             echo $time['nome'];
             ?>
@@ -176,7 +176,7 @@ $time3 = 8;
         <div class="card"">
           <div class="card-divider">
             <?php
-            $result = mysqli_query($link, "SELECT `nome` FROM `time` WHERE `id` = $time3") or die(mysql_errno($link));
+            $result = mysqli_query($link, "SELECT `nome` FROM `time` WHERE `id` = $time3") or die(mysqli_errno($link));
             $time = mysqli_fetch_array($result);
             echo $time['nome'];
             ?>
@@ -305,32 +305,6 @@ $time3 = 8;
           </tbody>
         </table>
       </div>
-      <!--  <div class="medium-6 large-3 cell">
-        <div class="row column text-center">
-          <h2>Artilharia</h2>
-          <hr>
-        </div>
-        <table>
-          <thead>
-            <tr>
-              <th>Jogador</th>
-              <th>Gol(s)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <?php
-            $result = mysqli_query($link, "SELECT `info_gol`.`jogador_id`, SUM(`info_gol`.`quantidade`) as gols, `jogador`.`nome`
-            FROM `jogador`
-            LEFT JOIN `info_gol` ON `info_gol`.`jogador_id` = `jogador`.`id`
-            WHERE (`info_gol`.`quantidade` > 0) GROUP BY `jogador_id` ORDER BY SUM(`info_gol`.`quantidade`) DESC");
-            while($artilheiro = mysqli_fetch_array($result)){
-            echo   '<tr>
-              <td>' . $artilheiro['nome'] . '</td><td>' . $artilheiro['gols'] . '</td></tr>';
-              }
-              ?>
-            </tbody>
-          </table>
-        </div> -->
       </div>
     </div>
     <div class="grid-container caixa">
