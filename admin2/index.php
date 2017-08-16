@@ -27,7 +27,7 @@ if(isset($_POST))
 }
 if(isset($error))
 	{
-		echo '<p class="bg-danger">' . $error . '</p>';
+		echo '<p class="">' . $error . '</p>';
 	}
 $paginaAtiva = "admin";
 include('header.php');

@@ -99,7 +99,7 @@ mysqli_query($link, $add) or die(mysqli_error($link));
             <?php
             $result = mysqli_query($link, "SELECT j.id AS id_jogo, tc.nome AS time_casa, tv.nome AS time_visitante, j.data AS data, j.placar_casa AS placar_casa, j.placar_visitante AS placar_visitante FROM jogo  j
             LEFT JOIN time tv ON tv.id = j.time_visitante
-            LEFT JOIN time tc ON tc.id = j.time_casa ORDER BY data DESC");
+            LEFT JOIN time tc ON tc.id = j.time_casa ORDER BY j.id ASC");
             while ($jogos = mysqli_fetch_array($result))
             {
             $post_id_jogo = $jogos['id_jogo'];

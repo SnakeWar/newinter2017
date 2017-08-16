@@ -54,10 +54,10 @@ $timeb = $jogo['timev_id'];
             </tr>
             <tr><td><?php
                     echo $jogo['data'] ?></td><td><?php echo $jogo['time_casa'] ?></td><td><?php echo $jogo['placar_casa']?> X <?php echo $jogo['placar_visitante']?></td><td><?php echo $jogo['time_visitante'];
-                    $result_gols = mysqli_query($link, "SELECT jo.nome AS jogador, gol.quantidade AS gols FROM info_gol AS gol LEFT JOIN jogador AS jo ON jo.id = gol.jogador_id WHERE gol.jogo_id = '$id_jogo'");
+                    $result_gols = mysqli_query($link, "SELECT jo.nome AS jogador, gol.quantidade AS gols, gol.id AS id FROM info_gol AS gol LEFT JOIN jogador AS jo ON jo.id = gol.jogador_id WHERE gol.jogo_id = '$id_jogo'");
             while ($gols = mysqli_fetch_array($result_gols))
             {
-                echo '<tr><td></td><td></td><td><i><u><b>' . $gols['jogador'] . '</b>: ' . $gols['gols'] . ' Gol(s)</i></u></td><td><button class="alert button" onclick="excluir(' . $gols['id'] . ',"' . $id_jogo . '")">Excluir</button>
+                echo '<tr><td></td><td></td><td><i><u><b>' . $gols['jogador'] . '</b>: ' . $gols['gols'] . ' Gol(s)</i></u></td><td><button class="alert button" onclick="excluir(' . $gols['id'] . ')">Excluir</button>
     </td></tr>';
             }
                     ?></td></tr>
@@ -96,8 +96,8 @@ $timeb = $jogo['timev_id'];
     function voltar(){
     window.location = "jogos.php";
     }
-    function excluir(id, id_jogo){
-    window.location = "excluir_gol.php?=id" + id + "id_jogo=" + id_jogo;
+    function excluir(id){
+    window.location = "excluir_gol.php?id=" + id;
     }
     </script>
     <?php

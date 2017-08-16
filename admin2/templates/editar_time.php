@@ -24,14 +24,17 @@ else
 	{
 		$nome = $_GET['nome'];
 
-		if($_GET['pontos'] == null)
+		if($_GET['pontos'] == null || $_GET['pro'] == null || $_GET['con'] == null)
 		{
-			echo '<br><p class="bg-danger erro">Preencha o campo Pontos</p>';
+			echo '<br><p class="bg-danger erro">Preencha o campo Pontos e/ou Gols Pro e/ou Gols Contra</p>';
 		}
 		else
 		{
       $pontos = $_GET['pontos'];
-			$query = "UPDATE `time` SET `nome` = '$nome', `pontos` = '$pontos' WHERE `id` = '$id_time'";
+      $pro = $_GET['pro'];
+      $con = $_GET['con'];
+      $saldo = $pro - $con;
+			$query = "UPDATE `time` SET `nome` = '$nome', `pontos` = '$pontos', `gols_pro` = '$pro', `gols_con` = '$con', `saldo` = '$saldo'  WHERE `id` = '$id_time'";
 
 				mysqli_query($link, $query) or die(mysqli_error($link));
 		}
@@ -56,7 +59,7 @@ $time = mysqli_fetch_array($times);
 <div class="card" style="width: 300px;">
   <div class="card-divider">
                <?php
-                    $result = mysqli_query($link, "SELECT `nome`, `pontos` FROM `time` WHERE `id` = '$id_time'");
+                    $result = mysqli_query($link, "SELECT `nome`, `gols_pro`, `gols_con`, `saldo`, `pontos` FROM `time` WHERE `id` = '$id_time'");
                     $time = mysqli_fetch_array($result);
                     echo $time['nome'];
                 ?>
@@ -110,10 +113,22 @@ $time = mysqli_fetch_array($times);
     <input type="text" class="form-control" name="nome" value="<?php echo $time['nome'];?>" placeholder="">
   </div>
   <div class="form-group">
-    <label for="exampleInputName2">Pontos</label>
-    <input type="text" class="form-control" value="<?php echo $time['pontos'];?>" name="pontos" placeholder="">
+    <label for="exampleInputName2">Gols Pro</label>
+    <input type="text" class="form-control" value="<?php echo $time['gols_pro'];?>" name="pro" placeholder="">
   </div>
-  <button type="submit" class="success button">Editar Time</button>
+    <div class="form-group">
+        <label for="exampleInputName2">Gols Contra</label>
+        <input type="text" class="form-control" value="<?php echo $time['gols_con'];?>" name="con" placeholder="">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputName2">Saldo</label>
+        <input type="text" class="form-control" disabled value="<?php echo $time['saldo'];?>" name="pontos" placeholder="">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputName2">Pontos</label>
+        <input type="text" class="form-control" value="<?php echo $time['pontos'];?>" name="pontos" placeholder="">
+    </div>
+  <button type="submit" class="success button">Salvar</button>
   <a class="warning button" href="times.php">Voltar</a>
 </form>
 <div class="row column text-center">

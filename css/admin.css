@@ -36,11 +36,18 @@ a:hover, a:link, a:visited{
 .ali-direita{
 	text-align: right;
 }
+.ali-esquerda{
+	text-align: left;
+}
+.ali-centro{
+	text-align: center;
+}
 .callout, .top-bar, .top-bar ul, .top-bar-left, .top-bar-right, .menu li{
 	background: #283a28;
 }
 .callout{
 	text-shadow: 0px 5px 5px #000;
+	margin: 0 0 0 0 !important;
 }
 /*h2{
 	font-family: 'Rationale', sans-serif;
