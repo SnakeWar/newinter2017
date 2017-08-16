@@ -18,7 +18,7 @@ $time3 = 8;
     <title>Altinão 2017</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/app.css" />
-    <link href="https://fonts.googleapis.com/css?family=Acme|Questrial" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Righteous" rel="stylesheet">
     <link rel="stylesheet" href="css/foundation-icons.css" />
       <link rel="icon" href="img/favicon.png" />
   </head>
@@ -27,7 +27,7 @@ $time3 = 8;
     <div class="top-bar">
       <div class="top-bar-left">
         <ul class="menu menu-maior">
-          <li class="menu-text logo-site acme"><img src="img/altinao_pequeno_verde.png"></li>
+          <li class="menu-text logo-site acme"><img src="img/altinao_verde.png"></li>
         </ul>
       </div>
       <div class="top-bar-right">
@@ -255,7 +255,7 @@ $time3 = 8;
         <thead>
           <tr>
             <th>Jogador</th>
-            <th style="text-align: right">Gol(s)</th>
+            <th style="text-align: center;">Gol(s)</th>
           </tr>
         </thead>
         <tbody>
@@ -266,7 +266,7 @@ $time3 = 8;
           WHERE (`info_gol`.`quantidade` > 0) GROUP BY `jogador_id` ORDER BY SUM(`info_gol`.`quantidade`) DESC");
           while($artilheiro = mysqli_fetch_array($result)){
           echo   '<tr>
-            <td>' . $artilheiro['nome'] . '</td><td style="text-align: right">' . $artilheiro['gols'] . '</td></tr>';
+            <td>' . $artilheiro['nome'] . '</td><td style="text-align: center">' . $artilheiro['gols'] . '</td></tr>';
             }
             ?>
           </tbody>
