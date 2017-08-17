@@ -6,7 +6,7 @@
     <title>Altinão 2017</title>
     <link rel="stylesheet" href="../../css/foundation.css" />
     <link rel="stylesheet" href="../../css/admin.css" />
-    <link href="https://fonts.googleapis.com/css?family=Acme|Questrial" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Righteous" rel="stylesheet">
     <link rel="stylesheet" href="../../css/foundation-icons.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation-datepicker/1.5.0/css/foundation-datepicker.min.css" />
       <link rel="icon" href="../../img/favicon.png" />

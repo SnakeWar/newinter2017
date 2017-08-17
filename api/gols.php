@@ -1,5 +1,4 @@
 <?php
-
 if (isset($_SERVER['HTTP_ORIGIN'])) {
     header("Access-Control-Allow-Origin: {$_SERVER['HTTP_ORIGIN']}");
     header('Access-Control-Allow-Credentials: true');
@@ -13,45 +12,47 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
         header("Access-Control-Allow-Headers: {$_SERVER['HTTP_ACCESS_CONTROL_REQUEST_HEADERS']}");
     exit(0);
 }
-/*$postdata = file_get_contents("php://input");
-if (isset($postdata)) {
-    $request = json_decode($postdata);
-    $estado = $request->estado;
-    include_once 'conexao.php';
-    $cidade = array();
-    $sql = "SELECT c.id_cidade, c.nome, c.capital FROM cidade c WHERE c.cod_estado = $estado";
+$postData = file_get_contents("php://input");
+if (isset($postData)) {
+    $request = json_decode($postData);
+    $jogo_id = '13';
+var_dump($jogo_id)
+    include_once '../config/banco.php';
+    /*$cidade = array();*/
+    $sql = "SELECT jo.nome AS jogador, gol.quantidade AS gols FROM info_gol AS gol LEFT JOIN jogador AS jo ON jo.id = gol.jogador_id WHERE gol.jogo_id = '$jogo_id'";
 //    $cmd->bindParam(':ID', $matricula);
-    $query = $con->query($sql);
-    foreach ($query as $row) {
-        $id = $row['id_cidade'];
+    $query = mysqli_query($link, "SELECT jo.nome AS jogador, gol.quantidade AS gols FROM info_gol AS gol LEFT JOIN jogador AS jo ON jo.id = gol.jogador_id WHERE gol.jogo_id = 12");
+    while($row = mysqli_fetch_assoc($query)){
+        /*$id = $row['id_cidade'];
         $nome = $row['nome'];
-        $capital = $row['capital'];
+        $capital = $row['capital'];*/
 //        echo $nome . "<br>";
-        array_push($cidade, array('id' => $id, 'nome' => $nome, 'capital' => $capital));
+        /*array_push($cidade, array('id' => $id, 'nome' => $nome, 'capital' => $capital));*/
+        $gols[] = $row;
 //        $cidade[] = ['nome' => $nome, ];
     }
-    $reposta = array("result" => $cidade);
-    $json = json_encode($reposta);
+    /*$gols = array("result" => $cidade);*/
+    $json = json_encode($gols);
     // $teste = $_POST[$json];
     echo $json;
 }else{
     echo "erro 2";
-}*/
-include('../config/banco.php');
+}
+/*
 $result = mysqli_query($link, "SELECT j.id AS id_jogo,tc.nome AS time_casa, tv.nome AS time_visitante, j.data AS data, j.placar_casa, j.placar_visitante FROM jogo  j
             LEFT JOIN time tv ON tv.id = j.time_visitante
             LEFT JOIN time tc ON tc.id = j.time_casa ORDER BY id_jogo ASC");
 
             while($jogos_php = mysqli_fetch_assoc($result)){
 
-             /*-----------------TESTE--------------------*/
+  
 
             $jogos[] = $jogos_php;
 
-            /* -----------------TESTE------------------*/
+  
             }
 
             $jogos_json = json_encode($jogos);
-            echo "$jogos_json";
+            echo "$jogos_json";*/
 
 ?>

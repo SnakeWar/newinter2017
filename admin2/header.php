@@ -6,7 +6,7 @@
     <title>Altinão 2017</title>
     <link rel="stylesheet" href="../css/foundation.css" />
     <link rel="stylesheet" href="../css/app.css" />
-    <link href="https://fonts.googleapis.com/css?family=Acme|Questrial" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Righteous" rel="stylesheet">
     <link rel="stylesheet" href="../css/foundation-icons.css" />
       <link rel="icon" href="../img/favicon.png" />
   </head>
@@ -16,7 +16,7 @@
     <div class="top-bar">
       <div class="top-bar-left">
         <ul class="menu menu-maior">
-            <li class="menu-text logo-site acme"><a class="logo-site" href="../index.php"><img src="../img/altinao_pequeno_verde.png"></a></li>
+            <li class="menu-text logo-site acme"><a class="logo-site" href="../index.php"><img src="../img/altinao_verde.png"></a></li>
 
         </ul>
       </div>
