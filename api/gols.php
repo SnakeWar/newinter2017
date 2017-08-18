@@ -13,16 +13,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
     exit(0);
 }
 $postData = file_get_contents("php://input");
+
 if (isset($postData)) {
     $request = json_decode($postData);
-    $jogo_id = '13';
-var_dump($jogo_id)
+    $jogo_id = $request->id;
+
     include_once '../config/banco.php';
     /*$cidade = array();*/
     $sql = "SELECT jo.nome AS jogador, gol.quantidade AS gols FROM info_gol AS gol LEFT JOIN jogador AS jo ON jo.id = gol.jogador_id WHERE gol.jogo_id = '$jogo_id'";
 //    $cmd->bindParam(':ID', $matricula);
-    $query = mysqli_query($link, "SELECT jo.nome AS jogador, gol.quantidade AS gols FROM info_gol AS gol LEFT JOIN jogador AS jo ON jo.id = gol.jogador_id WHERE gol.jogo_id = 12");
-    while($row = mysqli_fetch_assoc($query)){
+    $result = mysqli_query($link, $sql);
+    while($row = mysqli_fetch_assoc($result)){
         /*$id = $row['id_cidade'];
         $nome = $row['nome'];
         $capital = $row['capital'];*/
@@ -36,8 +37,9 @@ var_dump($jogo_id)
     // $teste = $_POST[$json];
     echo $json;
 }else{
-    echo "erro 2";
+    //echo "erro 2";
 }
+
 /*
 $result = mysqli_query($link, "SELECT j.id AS id_jogo,tc.nome AS time_casa, tv.nome AS time_visitante, j.data AS data, j.placar_casa, j.placar_visitante FROM jogo  j
             LEFT JOIN time tv ON tv.id = j.time_visitante
