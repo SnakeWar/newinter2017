@@ -32,6 +32,7 @@ $time3 = 8;
       </div>
       <div class="top-bar-right">
         <ul class="menu menu-maior">
+            <li><a class="admin" href="app/index.html">APP</a></li>
           <li><a class="admin" href="admin2/index.php">ADMIN</a></li>
         </ul>
         <ul class="menu dropdown menu-menor" data-dropdown-menu>
@@ -39,6 +40,7 @@ $time3 = 8;
             <i class="fi-list menu-drop"><a href="#"></a></i>
             <ul class="menu">
               <li class="menu-text"><a href="index.php">ALTINÃO 2017</a></li>
+                <li class="menu-text"><a class="admin" href="app/index.html">APP</a></li>
               <li class="menu-text"><a href="admin2/index.php">ADMIN</a></li>
             </ul>
           </li>
