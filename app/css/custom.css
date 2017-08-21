@@ -2,6 +2,7 @@
     background-image: url(../img//jumbo2.jpg);
     background-size: cover;
     background-attachment: fixed;
+    background-position: center right;
     padding: 175px 0;
     margin-bottom: 30px;
 }
@@ -91,6 +92,7 @@ ul, ol, dl {
     background-image: url(../img/jumbo3.jpg);
     background-size: cover;
     background-attachment: fixed;
+    background-position: center center;
         
 }
 #portfolio h2,h4{
@@ -110,25 +112,9 @@ ul, ol, dl {
     margin-left: 35%;
     margin-right: 30%;
 }
-@media only screen and (max-width: 760px) {
-    .centro{
-
-    }
-}
-
 .logo img{
-    width: 10%;
-    padding-left: 15px;
-}
-@media only screen and (max-width: 760px) {
-    .logo{
-        padding-left: 30px;
-        padding-top: 5px;
-
-    }
-    .logo img{
-        width: 30%;
-    }
+    width: 150px;
+    padding: 5px 15px !important;
 }
 nav{
     margin: 0 0 !important;
