@@ -231,7 +231,8 @@ $time3 = 8;
           <thead>
             <tr>
               <th>Time</th>
-              <th>GP</th>
+                <th>Vitórias</th>
+                <th>GP</th>
               <th>GC</th>
               <th>Saldo</th>
               <th>Ponto(s)</th>
@@ -239,10 +240,10 @@ $time3 = 8;
           </thead>
           <tbody>
             <?php
-            $result = mysqli_query($link, "SELECT `nome`, `pontos`, `gols_pro`, `gols_con`, `saldo` FROM `time` ORDER BY `pontos` DESC, `saldo` DESC");
+            $result = mysqli_query($link, "SELECT `nome`, `vitorias`, `pontos`, `gols_pro`, `gols_con`, `saldo` FROM `time` ORDER BY `pontos` DESC, `saldo` DESC");
             while ($classificacao = mysqli_fetch_array($result))
             {
-            echo '<tr><td>' . $classificacao['nome'] . '</td><td style="text-align: center">' . $classificacao['gols_pro'] .
+            echo '<tr><td>' . $classificacao['nome'] . '</td><td style="text-align: center">' . $classificacao['vitorias'] . '</td><td style="text-align: center">' . $classificacao['gols_pro'] .
           '<td style="text-align: center">' . $classificacao['gols_con'] . '</td><td style="text-align: center">' . $classificacao['saldo'] .
           '<td style="text-align: center">' . $classificacao['pontos'] . '</tr>';
           }
