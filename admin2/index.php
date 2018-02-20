@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 include('../config/banco.php');
 $usuarios = mysqli_query($link, "SELECT nome,senha FROM usuario");

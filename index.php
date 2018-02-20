@@ -239,7 +239,7 @@ $time3 = 8;
           </thead>
           <tbody>
             <?php
-            $result = mysqli_query($link, "SELECT `nome`, `pontos`, `gols_pro`, `gols_con`, `saldo` FROM `time` ORDER BY `pontos` DESC");
+            $result = mysqli_query($link, "SELECT `nome`, `pontos`, `gols_pro`, `gols_con`, `saldo` FROM `time` ORDER BY `pontos` DESC, `saldo` DESC");
             while ($classificacao = mysqli_fetch_array($result))
             {
             echo '<tr><td>' . $classificacao['nome'] . '</td><td style="text-align: center">' . $classificacao['gols_pro'] .
