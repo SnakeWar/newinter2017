@@ -41,6 +41,7 @@ else{
     <table class="table table-striped">
       <tr>
         <th class="ali-esquerda">Nome</th>
+          <th class="ali-centro">Vitórias</th>
         <th class="ali-centro">GP</th>
           <th class="ali-centro">GC</th>
           <th class="ali-centro">Saldo</th>
@@ -48,10 +49,10 @@ else{
         <th>Ações</th>
       </tr>
       <?php
-      $result = "SELECT nome, pontos, id, gols_pro, gols_con, saldo FROM time ORDER BY pontos DESC, saldo DESC";
+      $result = "SELECT nome, pontos, vitorias, id, gols_pro, gols_con, saldo FROM time ORDER BY pontos DESC, saldo DESC";
       $times = mysqli_query($link, $result);
       foreach($times as $time){
-        echo '<tr><td>' . $time['nome'] . '</td><td class="ali-centro">' . $time['gols_pro'] . '</td><td class="ali-centro">' . $time['gols_con'] . '</td><td class="ali-centro">' . $time['saldo'] . '</td><td class="ali-centro">' . $time['pontos'] . '</td><td class="ali-centro"><button type="submit" class=" warning button" onclick="editar('. $time['id'] .')">Editar</button> <button type="submit" class="alert button" onclick="confirmacao('. $time['id'] .')">Excluir</button></td></tr>';
+        echo '<tr><td>' . $time['nome']. '</td><td class="ali-centro">' . $time['vitorias'] . '</td><td class="ali-centro">' . $time['gols_pro'] . '</td><td class="ali-centro">' . $time['gols_con'] . '</td><td class="ali-centro">' . $time['saldo'] . '</td><td class="ali-centro">' . $time['pontos'] . '</td><td class="ali-centro"><button type="submit" class=" warning button" onclick="editar('. $time['id'] .')">Editar</button> <button type="submit" class="alert button" onclick="confirmacao('. $time['id'] .')">Excluir</button></td></tr>';
       }
       ?>
     </table>

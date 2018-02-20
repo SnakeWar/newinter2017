@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="83661214-8052-4c74-842f-9341b1e71497" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin2/templates/times.php" afterPath="$PROJECT_DIR$/admin2/templates/times.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -88,14 +89,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="times.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="times.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin2/templates/times.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="50" column="110" lean-forward="false" selection-start-line="50" selection-start-column="110" selection-end-line="50" selection-end-column="110" />
+            <state relative-caret-position="443">
+              <caret line="54" column="89" lean-forward="false" selection-start-line="54" selection-start-column="89" selection-end-line="54" selection-end-column="89" />
               <folding>
-                <marker date="1517851846373" expanded="true" signature="271:330" ph="INSERT INTO `time`... " />
-                <marker date="1517851846373" expanded="true" signature="1379:1467" ph="SELECT nome,... time" />
+                <marker date="1519134825551" expanded="true" signature="271:330" ph="INSERT INTO `time`... " />
+                <marker date="1519134825551" expanded="true" signature="1426:1524" ph="SELECT nome,... time" />
+                <marker date="1519134825551" expanded="true" signature="1426:1529" ph="SELECT nome,... time" />
               </folding>
             </state>
           </provider>
@@ -137,7 +139,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editar_time.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="editar_time.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin2/templates/editar_time.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
@@ -202,10 +204,10 @@
         <option value="$PROJECT_DIR$/config/banco.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/api/tabela.php" />
-        <option value="$PROJECT_DIR$/admin2/templates/times.php" />
         <option value="$PROJECT_DIR$/admin2/index.php" />
         <option value="$PROJECT_DIR$/admin2/templates/editar_jogo.php" />
         <option value="$PROJECT_DIR$/admin2/templates/editar_time.php" />
+        <option value="$PROJECT_DIR$/admin2/templates/times.php" />
       </list>
     </option>
   </component>
@@ -437,7 +439,7 @@
       <workItem from="1517850464390" duration="2765000" />
       <workItem from="1517951864103" duration="20000" />
       <workItem from="1519049435146" duration="5499000" />
-      <workItem from="1519131725193" duration="2578000" />
+      <workItem from="1519131725193" duration="2992000" />
     </task>
     <task id="LOCAL-00001" summary="Acrescentar Gols pro, contra e saldo">
       <created>1502236121893</created>
@@ -481,11 +483,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519134438921</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Adicionar número de vitórias, contagem automática de gols pro e gols contra.">
+      <created>1519134512027</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1519134512027</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50832000" />
+    <option name="totallyTimeSpent" value="51246000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1932" height="1049" extended-state="0" />
@@ -861,17 +870,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin2/templates/times.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="110" lean-forward="false" selection-start-line="50" selection-start-column="110" selection-end-line="50" selection-end-column="110" />
-          <folding>
-            <marker date="1517851846373" expanded="true" signature="271:330" ph="INSERT INTO `time`... " />
-            <marker date="1517851846373" expanded="true" signature="1379:1467" ph="SELECT nome,... time" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin2/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -939,6 +937,18 @@
             <marker date="1519134271266" expanded="true" signature="7026:7155" ph="SELECT `nome... jogador" />
             <marker date="1519134271266" expanded="true" signature="11085:11134" ph="SELECT `nome... time" />
             <marker date="1519134271266" expanded="true" signature="11428:11444" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin2/templates/times.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="54" column="89" lean-forward="false" selection-start-line="54" selection-start-column="89" selection-end-line="54" selection-end-column="89" />
+          <folding>
+            <marker date="1519134825551" expanded="true" signature="271:330" ph="INSERT INTO `time`... " />
+            <marker date="1519134825551" expanded="true" signature="1426:1524" ph="SELECT nome,... time" />
+            <marker date="1519134825551" expanded="true" signature="1426:1529" ph="SELECT nome,... time" />
           </folding>
         </state>
       </provider>
