@@ -91,10 +91,10 @@
       <file leaf-file-name="tabela.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/tabela.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="39" column="65" lean-forward="false" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
+            <state relative-caret-position="561">
+              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding>
-                <marker date="1519223011725" expanded="true" signature="1540:1656" ph="SELECT `nome... time" />
+                <marker date="1519223699183" expanded="true" signature="1540:1672" ph="SELECT `nome... time" />
               </folding>
             </state>
           </provider>
@@ -118,7 +118,7 @@
         <entry file="file://$PROJECT_DIR$/admin2/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
-              <caret line="26" column="5" lean-forward="true" selection-start-line="22" selection-start-column="43" selection-end-line="26" selection-end-column="5" />
+              <caret line="26" column="5" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="26" selection-end-column="5" />
               <folding>
                 <marker date="1517852052042" expanded="true" signature="89:119" ph="SELECT nome,... usuario" />
               </folding>
@@ -130,7 +130,7 @@
         <entry file="file://$PROJECT_DIR$/admin2/templates/editar_jogo.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2006">
-              <caret line="118" column="8" lean-forward="true" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="8" />
+              <caret line="118" column="8" lean-forward="false" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="8" />
               <folding>
                 <marker date="1519049946452" expanded="true" signature="801:997" ph="UPDATE jogo " />
                 <marker date="1519049946452" expanded="true" signature="1136:1407" ph="SELECT j.id jogo" />
@@ -144,7 +144,7 @@
         <entry file="file://$PROJECT_DIR$/admin2/templates/editar_time.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="3451">
-              <caret line="203" column="55" lean-forward="true" selection-start-line="203" selection-start-column="55" selection-end-line="203" selection-end-column="55" />
+              <caret line="203" column="55" lean-forward="false" selection-start-line="203" selection-start-column="55" selection-end-line="203" selection-end-column="55" />
               <folding>
                 <marker date="1519134271266" expanded="true" signature="733:876" ph="UPDATE `time... " />
                 <marker date="1519134271266" expanded="true" signature="974:1015" ph="SELECT nome,... time" />
@@ -301,7 +301,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../curriculo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../appaltinao" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RunDashboard">
@@ -424,7 +424,7 @@
       <workItem from="1519049435146" duration="5499000" />
       <workItem from="1519131725193" duration="3123000" />
       <workItem from="1519135279043" duration="2372000" />
-      <workItem from="1519222720421" duration="307000" />
+      <workItem from="1519222720421" duration="1253000" />
     </task>
     <task id="LOCAL-00001" summary="Acrescentar Gols pro, contra e saldo">
       <created>1502236121893</created>
@@ -496,17 +496,23 @@
       <option name="project" value="LOCAL" />
       <updated>1519141120035</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Acrescentar número de &quot;vitórias&quot; na API para &quot;tabelas&quot; no App.">
+      <created>1519223078322</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1519223078322</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54056000" />
+    <option name="totallyTimeSpent" value="55002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1057" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28993437" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28993437" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -539,7 +545,8 @@
     <MESSAGE value="Adicionar número de vitórias na tabela." />
     <MESSAGE value="Adicionar número de vitórias na tabela da página principal." />
     <MESSAGE value="Aumetar tamanho da foto do slide, para aparecer todo o time em resolução mais altas." />
-    <option name="LAST_COMMIT_MESSAGE" value="Aumetar tamanho da foto do slide, para aparecer todo o time em resolução mais altas." />
+    <MESSAGE value="Acrescentar número de &quot;vitórias&quot; na API para &quot;tabelas&quot; no App." />
+    <option name="LAST_COMMIT_MESSAGE" value="Acrescentar número de &quot;vitórias&quot; na API para &quot;tabelas&quot; no App." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -856,7 +863,7 @@
     <entry file="file://$PROJECT_DIR$/admin2/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="22" selection-start-column="43" selection-end-line="26" selection-end-column="5" />
+          <caret line="26" column="5" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="26" selection-end-column="5" />
           <folding>
             <marker date="1517852052042" expanded="true" signature="89:119" ph="SELECT nome,... usuario" />
           </folding>
@@ -866,7 +873,7 @@
     <entry file="file://$PROJECT_DIR$/admin2/templates/editar_jogo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2006">
-          <caret line="118" column="8" lean-forward="true" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="8" />
+          <caret line="118" column="8" lean-forward="false" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="8" />
           <folding>
             <marker date="1519049946452" expanded="true" signature="801:997" ph="UPDATE jogo " />
             <marker date="1519049946452" expanded="true" signature="1136:1407" ph="SELECT j.id jogo" />
@@ -890,7 +897,7 @@
     <entry file="file://$PROJECT_DIR$/admin2/templates/editar_time.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3451">
-          <caret line="203" column="55" lean-forward="true" selection-start-line="203" selection-start-column="55" selection-end-line="203" selection-end-column="55" />
+          <caret line="203" column="55" lean-forward="false" selection-start-line="203" selection-start-column="55" selection-end-line="203" selection-end-column="55" />
           <folding>
             <marker date="1519134271266" expanded="true" signature="733:876" ph="UPDATE `time... " />
             <marker date="1519134271266" expanded="true" signature="974:1015" ph="SELECT nome,... time" />
@@ -906,14 +913,6 @@
             <marker date="1519134271266" expanded="true" signature="11085:11134" ph="SELECT `nome... time" />
             <marker date="1519134271266" expanded="true" signature="11428:11444" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/banco.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="72" lean-forward="false" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -953,12 +952,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/banco.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="72" lean-forward="false" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/tabela.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="39" column="65" lean-forward="false" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
+        <state relative-caret-position="561">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding>
-            <marker date="1519223011725" expanded="true" signature="1540:1656" ph="SELECT `nome... time" />
+            <marker date="1519223699183" expanded="true" signature="1540:1672" ph="SELECT `nome... time" />
           </folding>
         </state>
       </provider>
