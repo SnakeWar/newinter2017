@@ -4,7 +4,6 @@
     <list default="true" id="83661214-8052-4c74-842f-9341b1e71497" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lista-jogos.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -389,7 +388,7 @@
       <workItem from="1519131725193" duration="3123000" />
       <workItem from="1519135279043" duration="2372000" />
       <workItem from="1519222720421" duration="3079000" />
-      <workItem from="1519389878860" duration="1688000" />
+      <workItem from="1519389878860" duration="1745000" />
     </task>
     <task id="LOCAL-00001" summary="Acrescentar Gols pro, contra e saldo">
       <created>1502236121893</created>
@@ -482,11 +481,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519225205832</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Ascrescentar botão &quot;ver mais&quot; para jogos.">
+      <created>1519391623451</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1519391623451</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58516000" />
+    <option name="totallyTimeSpent" value="58573000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -527,7 +533,8 @@
     <MESSAGE value="Acrescentar número de &quot;vitórias&quot; na API para &quot;tabelas&quot; no App." />
     <MESSAGE value="Alterar &quot;Order by&quot; para pontos, vitorias, saldo." />
     <MESSAGE value="Alterar &quot;Order by&quot; de ASC para DESC." />
-    <option name="LAST_COMMIT_MESSAGE" value="Alterar &quot;Order by&quot; de ASC para DESC." />
+    <MESSAGE value="Ascrescentar botão &quot;ver mais&quot; para jogos." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ascrescentar botão &quot;ver mais&quot; para jogos." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
