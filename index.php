@@ -293,7 +293,7 @@ $time3 = 8;
             <?php
             $result = mysqli_query($link, "SELECT j.id AS id_jogo,tc.nome AS time_casa, tv.nome AS time_visitante, j.data AS data, j.placar_casa, j.placar_visitante FROM jogo  j
             LEFT JOIN time tv ON tv.id = j.time_visitante
-            LEFT JOIN time tc ON tc.id = j.time_casa ORDER BY j.id ASC LIMIT 6");
+            LEFT JOIN time tc ON tc.id = j.time_casa ORDER BY j.id DESC LIMIT 6");
             while ($jogos = mysqli_fetch_array($result))
             {
             $jogo_id = $jogos['id_jogo'];
@@ -304,10 +304,13 @@ $time3 = 8;
             echo '<tr><td></td><td></td><td><i><u><b>' . $gols['jogador'] . '</b>: ' . $gols['gols'] . ' Gol(s)</i></u></td><td></td></tr>';
             }
             }
+            mysqli_close($link);
             ?>
           </tbody>
         </table>
+          <a href="lista-jogos.php" target="_blank"><button class="button success expanded" style="color: white;font-weight: bold">Ver Mais</button></a>
       </div>
+
       </div>
     </div>
     <div class="grid-container caixa">
